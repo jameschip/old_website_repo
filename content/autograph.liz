@@ -2,10 +2,20 @@
 {{ h1 Autograph }}
 {{ li https://github.com/jameschip/Autograph ( Autograph on github ) }} {{ br }} {{ br }}
 
-A small markdown editor that is keyboard driven. If follows githubs markdown style.
+Autograph is a minimal markdown editor with simple and entirely keyboard driven interface.
+It has 2working modes which can be toggled between by pressing meta+d.
 
-The editor has 2 editing modes Dual display mode where the editor and preview are side by side. As you type into the editor your changes are updated in the preview and; as sometimes a constantly updating preview can be distracting, there is also a single display mode. In single display only either the editor or the preview will be shown and can be swapped between using the tab key.
-Keyboard control
+{{ h2 Dual view mode. }}
+
+In dual view mode the file you are editing is displayed on the left of the interface and a preview of your files format is displayed on the right.
+The preview of your file is updated as you type so you can see your changes as  you go.
+
+{{ h2 Single view mode }}
+
+Sometimes while in the flow of writing the constantly updating preview can be distracting. In single view mode the preview is hidden and only the file you are editing is displayed.
+You can switch back and forth between the preview and edit view by using the tab key.
+
+{{ h2 Keyboard commands }}
 
    {{ bp meta+o -> Open. }}
    {{ bp meta+n -> New file. }}
@@ -19,6 +29,8 @@ Keyboard control
 {{ im ./media/software/autograph_screen.png }}
 
 {{ h2 Libs used }}
+
+The following libraries were used in creating this project.{{ br }}
 
 {{ li https://github.com/hundredrabbits/Themes Ecosystem Themes }} by Hundred rabbits. {{ br }}
 
