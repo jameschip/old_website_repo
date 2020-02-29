@@ -75,9 +75,9 @@ a:hover {
 }
 
 .nav {
-    padding-top: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
+    /* padding-top: 1em; */
+    /* padding-left: 3em; */
+    /* padding-right: 3em; */
     padding-bottom: 1em;
     text-align: left;
     font-size: 18pt;
@@ -109,6 +109,7 @@ a:hover {
     padding-top: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
+    margin-right: 1em;
 }
 
 .pageContainer {
