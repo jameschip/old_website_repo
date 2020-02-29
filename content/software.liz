@@ -1,0 +1,19 @@
+{{ im ./media/software/software.jpg }}
+
+{{ h1 Software. }}
+
+{{ im ./media/software/river.png }}
+{{ li ./the_river.html { 2020 The River } }} {{ br }}
+{{ br }}
+A collection of simple tools for creating a static website.  
+
+{{ im ./media/software/almanac.jpg }}
+{{ li ./almanac.html { 2019 Almanac } }} {{ br }}
+{{ br }}
+Short form journaling software in a single shell script.  
+
+{{ im ./media/software/autograph.png }}
+{{ li ./aurograph.html { 2019 Autograph } }} {{ br }}
+{{ br }}
+A minimal keyboard driven markdown editor.
+
