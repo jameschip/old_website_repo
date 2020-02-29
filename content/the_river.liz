@@ -11,6 +11,6 @@ built using The River. {{ br }}
 
 {{ im ./media/software/lizard.png }}
 
-{{ li ./the_lizard.html { The Lizard } }} - A simple syntax for creating content for web pages on the river.
+{{ li ./the_lizard.html { The Lizard } }} - A simple syntax for web pages on the river.
 
 {{ br }} 
