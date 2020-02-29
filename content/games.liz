@@ -5,16 +5,9 @@
 {{ br }}
 
 {{ im ./media/games/adventurer.png }}
-{{ li https://jameschip.itch.io/the-adventurer { 2019 The Adventurer } }} {{ br }}
-{{ br }}
-
-The Adventurer is a solo pen and paper RPG where you write the journal entries of a lone adventurer 
-as they discover the world on their travels. All you need to play is a standard deck of playing cards 
-and some free time. {{ br }}
+{{ li ./the_adventurer.html { 2019 The Adventurer } }} - A solo journal writing RPG. {{ br }}
 
 {{ im ./media/games/treecrets.jpeg }}
-{{ li https://200wordrpg.github.io/2019/rpg/2019/10/04/Treecrets.html { 2019 Treecrets } }} {{ br }}
-{{ br }}
-Discover the secret histories of trees with a friend. Treecrets is a 2 player rpg 
-written for the 200 word rpg challenge.
+{{ li https://200wordrpg.github.io/2019/rpg/2019/10/04/Treecrets.html { 2019 Treecrets } }} - Discover the secrets of trees with a friend.{{ br }}
+
 
