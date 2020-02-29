@@ -75,20 +75,23 @@ a:hover {
 }
 
 .nav {
-    float: left;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-left: 3em;
-    padding-right: 2em;
-    text-align: right;
-    font-size: 16pt;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    text-align: left;
+    font-size: 18pt;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    border-bottom-style: solid;
 }
 
 .content {
     padding-top: 1em;
     overflow: hidden;
-    max-width: 600px;
-    padding-left: 1em;
-    padding-right: 1em;
+    max-width: 800px;
+    padding-left: 3em;
+    padding-right: 3em;
     padding-bottom: 2em;
     margin-bottom: 2em;
 }
@@ -110,7 +113,7 @@ a:hover {
 
 .pageContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .footer {
@@ -129,7 +132,7 @@ footer img {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .pageContainer{
         flex-direction: column;
     }
@@ -141,4 +144,4 @@ footer img {
         padding-right: 1em;
         text-align: left; 
     }
-}
+} */
