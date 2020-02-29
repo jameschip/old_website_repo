@@ -13,7 +13,7 @@ A collection of simple tools for creating a static website.
 Short form journaling software in a single shell script.  
 
 {{ im ./media/software/autograph.png }}
-{{ li ./aurograph.html { 2019 Autograph } }} {{ br }}
+{{ li ./autograph.html { 2019 Autograph } }} {{ br }}
 {{ br }}
 A minimal keyboard driven markdown editor.
 

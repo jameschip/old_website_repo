@@ -1,0 +1,26 @@
+{{ im ./media/software/autograph.png }}
+{{ h1 Autograph }}
+{{ li https://github.com/jameschip/Autograph ( Autograph on github ) }} {{ br }} {{ br }}
+
+A small markdown editor that is keyboard driven. If follows githubs markdown style.
+
+The editor has 2 editing modes Dual display mode where the editor and preview are side by side. As you type into the editor your changes are updated in the preview and; as sometimes a constantly updating preview can be distracting, there is also a single display mode. In single display only either the editor or the preview will be shown and can be swapped between using the tab key.
+Keyboard control
+
+   {{ bp meta+o -> Open. }}
+   {{ bp meta+n -> New file. }}
+   {{ bp meta+s -> Save. }} 
+   {{ bp meta+S -> Save as. }}
+   {{ bp meta+> -> Cursor to next heading. }}
+   {{ bp meta+< -> Cursor to previous heading. }}
+   {{ bp meta+d -> Toggle dual display mode. }} 
+   {{ bp tab -> in single edit mode this key will change between edit or preview. }}
+
+{{ im ./media/software/autograph_screen.png }}
+
+{{ h2 Libs used }}
+
+{{ li https://github.com/hundredrabbits/Themes Ecosystem Themes }} by Hundred rabbits. {{ br }}
+
+{{ li https://github.com/jonschlinkert/remarkable Remarkable markdown parser. }} {{ br }}
+
