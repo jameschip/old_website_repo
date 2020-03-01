@@ -6,9 +6,10 @@ The Adventurer is a journal writing game for a single player played with a stand
 The game follows the life of a lone adventurer on a journey around a world of your own creation. During the
 game you will be learning about a world entirely of your own creation and the people and creatures that inhabit it. {{ br }}
 
-{{ im ./media/games/adventurer_table.png }}
 
 {{ h2 Game play. }}
 
 Game play revolves around drawing cards, looking up their meaning on the card table and then interpreting 
-their meaning by writing journal entries. 
+their meaning by writing journal entries.
+ 
+{{ im ./media/games/adventurer_table.png }}

@@ -8,7 +8,7 @@ body {
     border: 0em;
     margin: 0em;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 13pt;
+    font-size: 18pt;
 }
 
 a,
@@ -75,15 +75,18 @@ a:hover {
 }
 
 .nav {
-    /* padding-top: 1em; */
-    /* padding-left: 3em; */
-    /* padding-right: 3em; */
     padding-bottom: 1em;
     text-align: left;
-    font-size: 18pt;
     line-height: 1.6;
     margin-bottom: 1em;
     border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.divider {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .content {
@@ -133,3 +136,18 @@ footer img {
     vertical-align: middle;
 }
 
+@media screen and (max-width: 600px) {
+    .nav {
+        padding-bottom: 1em;
+        text-align: left;
+        line-height: 1.6;
+        margin-bottom: 1em;
+        border-bottom-style: solid;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .divider {
+        display: none;
+    }
+  }
