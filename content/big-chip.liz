@@ -1,19 +1,20 @@
 {{ im ./media/audio/big-chip.png }}
+{{ h1 Audio / Big-Chip. }}
 Big-Chip was the name under which I released chip music. The name came from a bag of frozen chips that my friend had; when he suggested that it might make a good name for a chip music act I agreed, but it’s a crap name.
 
-{{ h1 The Big-Chip ep. }}
+{{ h2 The Big-Chip ep. }}
 {{ li https://archive.org/details/big-chip-ep { Download the Big-Chip ep } }} {{ br }}
 {{ br }}
 This was the first Big-Chip release. This was totally lost when the Big-Chip website I was running went down in 2010; around the same time the hard drive that had the files on died. Lucky for me a friend found a copy of it on his backup drive in 2019. 
-{{ h1 The Bottle ep }}
+{{ h2 The Bottle ep }}
 {{ li https://archive.org/details/CDK007 { Download the Bottle ep } }} {{ br }}
 {{ br }}
 The second of the big-chip releases. This one was mostly composed using a midines and was originally released on CDK records in about 2007.
-{{ h1 The Mario paint compilation }}
+{{ h2 The Mario paint compilation }}
 {{ li https://archive.org/details/CDK002 { Download the Mario paint compilation } }} {{ br }}
 {{ br }}
 This was a collection of music from various artists made using the mario paint music sequencer. It was released on CDK records.
-{{ h1 The Gabba compilation }}
+{{ h2 The Gabba compilation }}
 {{ li https://archive.org/details/CDK005 { Download the Gabba compilation } }} {{ br }}
 {{ br }}
 This was a collection of super aggressive chip music organized by myself and another chip musician called n0dl. It was released on CDK records.
