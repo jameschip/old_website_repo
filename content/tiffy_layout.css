@@ -136,6 +136,23 @@ footer img {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .titleImage {
+        height: 3em;
+        width: 3em;
+        background-color: var(--pink-highlight);
+        margin-right: 1em;
+    }
+    
+    .titleText {
+        font-size: 2em;
+    }
+
+    .socialImage {
+        height: 1em;
+        width: 1em;
+    }
+
     .nav {
         padding-bottom: 1em;
         text-align: left;
