@@ -112,6 +112,7 @@ a:hover {
     padding-right: 1em;
     padding-bottom: 1em;
     margin-right: 1em;
+    overflow: hidden;
 }
 
 .pageContainer {
@@ -137,11 +138,20 @@ footer img {
 
 @media screen and (max-width: 600px) {
 
+    .topBar {
+        padding-left: 0.5em;
+    }
+
+    .content {
+        padding-left:  0.5em;
+        padding-right: 0.5em;
+    }
+
     .titleImage {
         height: 3em;
         width: 3em;
         background-color: var(--pink-highlight);
-        margin-right: 1em;
+        margin-right: 0.5em;
     }
     
     .titleText {
