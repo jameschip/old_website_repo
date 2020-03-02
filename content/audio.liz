@@ -1,5 +1,7 @@
-{{ im ./media/audio.jpg }} {{ br }}
+{{ im ./media/audio/audio.jpg }} {{ br }}
 
 {{ h1 Audio.}}
 
-Here you will find a collection of audio works that I have produced over the years.
+{{ im ./media/audio/big-chip.png }}
+{{ li ./big-chip.html { Big-Chip } }} - Chiptunes {{ br }}
+{{ br }}
