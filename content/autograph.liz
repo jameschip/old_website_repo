@@ -1,5 +1,5 @@
 {{ im ./media/software/autograph.png }}
-{{ h1 Software / Autograph }}
+{{ h1 Autograph }}
 {{ li https://github.com/jameschip/Autograph ( Autograph on github ) }} {{ br }} {{ br }}
 
 Autograph is a minimal markdown editor with simple and entirely keyboard driven interface.

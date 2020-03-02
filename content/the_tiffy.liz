@@ -1,5 +1,5 @@
 {{ im ./media/software/tiffy.png }}
-{{ h1 Software / The River / The Tiffy }}
+{{ h1 The Tiffy }}
 
 {{ li https://github.com/jameschip/Tiffy { The Tiffy on Github } }} {{ br }}
 {{ br }} 

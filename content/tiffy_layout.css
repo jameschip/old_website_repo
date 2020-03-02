@@ -112,7 +112,8 @@ a:hover {
     padding-right: 1em;
     padding-bottom: 1em;
     margin-right: 1em;
-    overflow: hidden;
+    margin-left: 1em;
+    overflow: scroll;
 }
 
 .pageContainer {

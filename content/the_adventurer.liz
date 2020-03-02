@@ -1,6 +1,6 @@
 {{ im ./media/games/adventurer.png }}
-{{ h1 Games / The Adventurer }}
-{{ li https://jameschip.itch.io/the-adventurer { The Adventurer on itch.io } }} {{ br }}{{ br }}
+{{ h1 The Adventurer }}
+{{ li https://jameschip.itch.io/the-adventurer { Download from itch.io } }} {{ br }}{{ br }}
 
 The Adventurer is a journal writing game for a single player played with a standard deck of playing cards.
 The game follows the life of a lone adventurer on a journey around a world of your own creation. During the

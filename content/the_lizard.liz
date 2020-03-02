@@ -1,6 +1,6 @@
 {{ im ./media/software/lizard.png }}
 
-{{ h1 Software / The River / The Lizard }}
+{{ h1 The Lizard }}
 
 {{ li https://github.com/jameschip/Lizard { The Lizard on Github } }} {{ br }}
 {{ br }}

@@ -1,6 +1,6 @@
 {{ im ./media/software/river.png }}
 
-{{ h1 Software / The River. }}
+{{ h1 The River. }}
 
 The river is a collection of lightweight tools for creating static websites and consists of {{ li ./the_tiffy.html Tiffy}} and {{ li ./the_lizard.html Lizard }}.
 They were designed for fast and easy use and impose simple limits on the user to inspire creative design. The website you are reading this on was designed and 
