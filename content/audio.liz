@@ -5,3 +5,6 @@
 {{ im ./media/audio/big-chip.png }}
 {{ li ./big-chip.html { Big-Chip } }} - Chiptunes {{ br }}
 {{ br }}
+{{ im ./media/audio/wineo.jpg }}
+{{ li ./wine-o.html { Wine-o } }} - A skacore band {{ br }}
+{{ br }}
