@@ -1,11 +1,13 @@
+{{ im ./media/eurorack.jpg }}
+
 {{ h1 Eurorack synths }}
 
 Eurorack is a small form factor of analogue modular synth, although more and more digital modules are becoming available.
 
 {{ h2 Physical spec }}
 
-{{ it 3U height }} ( 113.4mm ) {{ br }}
-{{ it 1HP width }} ( 5.08mm ) {{ br }}
+{{ it 3U height  ( 113.4mm ) }} {{ br }}
+{{ it 1HP width ( 5.08mm ) }} {{ br }}
 {{ it Mono 3.5mm jack }} {{ br }}
 {{ br }}
 All module in the system are 3U high. The width of a module is measured in a number of HP wide such as 3HP ( 15.24mm ).  
@@ -16,16 +18,48 @@ Connections between modules inputs and outputs are made with mono 3.5mm jack cab
 {{ h3 Power }}
 
 {{ it +/- 12v DC }} {{ br }}
-{{ it + 5v DC }} ( optional ) {{ br }}
+{{ it + 5v DC  ( optional ) }} {{ br }}
 {{ br }}
 Power is from a dual rail 12v DC power supply on a 10 or 16 pin box header. An optional 5v DC supply may also be available but is
 not standard, although most power supplies include it, so check to see if you need an adaptor to provide it.
 
 {{ h3 Signals }}
-{{ it Audio 10v peak to peak }} ( +/- 5v ) {{ br }}
+{{ it Audio 10v peak to peak ( +/- 5v ) }} {{ br }}
 {{ it Control voltages 5v peak to peak or 0v -8v }} {{ br }}
 {{ it Triggers 0v - 5v }} {{ br }}
 {{ it volt per octave }}{{ br }}
 {{ br }}
 Control voltages can be unipolar or bipolar. Unipolar signals normally go +/- 2.5v and unipolar ones normally go 0v - 8v.
+
+{{ h2 Basic module types }}
+
+{{ h3 Oscillators }}
+Oscillators are sound sources for your synth. Normally pitch is controlled by a V/Octave input.
+
+{{ h3 Voltage controlled amplifier }}
+Otherwise known as a VCA these modules control the amplitude of an input signal being reproduced at the output. An input voltage is used to 
+set the level of the output signal.
+
+{{ h3 Envelope }}
+These modules produce a varying voltage over a period of time. Voltage rises and falls in four common stages, attack, decay, sustain and release. These 
+modules are usually triggered by a gate voltage or trigger at an input.
+{{ cb  
+V|      /\ 
+O|     /  \______
+L|    /          \
+T|--------------------
+ |     A  D  S   R
+ | <---- TIME ----->
+}}
+
+The attack time is the length of time that the voltage takes to rise to the maximum level. The decay time is the time it takes 
+for the voltage to lower to the sustain level after the attack period has finished. The sustain level is held for as long as a gate 
+signal is still present at the input. The release time is the amount of time it takes for the voltage to lower to the minimum after 
+the gate signal ends at the input.
+
+{{ h3 Voltage controlled filter }}
+These modules are used to remove/ shape frequencies from an audio source. They commonly have 2 controls, cutoff an resonance,
+that are voltage controllable.
+
+
                                 
