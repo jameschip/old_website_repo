@@ -1,0 +1,42 @@
+
+
+{{ h1 Reading Lists }}
+
+This is a place where i am keeping a list of all lof the books I have read or am currently reading.
+I started keeping this list as a way to encourage myself to read more but also to keep track of what
+I have and have not read.
+
+{{ h2 2020 reading }}
+
+{{ h3 In progress }}
+
+{{ it 20,000 Leagues under the sea }} - Jules Verne {{ br }}
+
+{{ h2 2019 reading }}
+
+{{ it Soul Music }} - Terry Pratchet {{ br }}
+{{ it The Subtle Art of Not Giving A F*ck }} - Mark Manson {{ br }}
+{{ it No One Is Too Small to Make a Difference }} - Greta Thunberg {{ br }}
+{{ it Finite and Infinite Games }} - James P. Carse {{ br }}
+{{ it Why I am not a Christian }} - Bertrand Russel {{ br }}
+{{ it The Memoirs of Moominpapa }} - Tove Jansson {{ br }}
+{{ it Killing and Dying }} - Adrian Tomine {{ br }}
+{{ it QED }} - Richard Feynman {{ br }}
+{{ it Sabrina }} - Nick Drnaso 
+
+{{ h2 2018 reading }}
+
+{{ it Jonathan Strange and Mr Norrell }} - Susanna Clarke {{ br }}
+{{ it Ciaphas Cain: Hero of the Imperium }} - Sandy Mitchell {{ br }}
+{{ it Snuff }} - Terry Pratchet {{ br }}
+
+{{ h2 Permanent bookshelf }}
+
+{{ it Maus }} - Art Spiegelman {{ br }}
+{{ it Of Mice and Men }} - John Steinbeck {{ br }}
+{{ it The Woman in Black }} - Susan Hill {{ br }}
+{{ it The Machine Stops }} - E M Foster {{ br }}
+{{ it Colleced Ghost Stories }} - M R James {{ br }}
+{{ it The First Men in the Moon }} - H G Wells {{ br }}
+{{ it Persepolis }} - Marjane Satrapi {{ br }}
+{{ it Jimmy Corrigan: The Smartest Kid on Earth }} - Chris Ware {{ br }} {{ br }}

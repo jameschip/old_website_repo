@@ -1,0 +1,5 @@
+{{ h1 Wiki }}
+This is a place where I will be keeping various things that I have been researching or learning as I go along. {{ br }} {{ br }}
+
+{{ li ./book_list.html { Reading lists } }} {{ br }}
+{{ li ./eurorack.html { Eurorack synths } }} {{ br }}        

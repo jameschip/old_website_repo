@@ -1,0 +1,31 @@
+{{ h1 Eurorack synths }}
+
+Eurorack is a small form factor of analogue modular synth, although more and more digital modules are becoming available.
+
+{{ h2 Physical spec }}
+
+{{ it 3U height }} ( 113.4mm ) {{ br }}
+{{ it 1HP width }} ( 5.08mm ) {{ br }}
+{{ it Mono 3.5mm jack }} {{ br }}
+{{ br }}
+All module in the system are 3U high. The width of a module is measured in a number of HP wide such as 3HP ( 15.24mm ).  
+Connections between modules inputs and outputs are made with mono 3.5mm jack cables. 
+
+{{ h2 Electrical spec }}
+
+{{ h3 Power }}
+
+{{ it +/- 12v DC }} {{ br }}
+{{ it + 5v DC }} ( optional ) {{ br }}
+{{ br }}
+Power is from a dual rail 12v DC power supply on a 10 or 16 pin box header. An optional 5v DC supply may also be available but is
+not standard, although most power supplies include it, so check to see if you need an adaptor to provide it.
+
+{{ h3 Signals }}
+{{ it Audio 10v peak to peak }} ( +/- 5v ) {{ br }}
+{{ it Control voltages 5v peak to peak or 0v -8v }} {{ br }}
+{{ it Triggers 0v - 5v }} {{ br }}
+{{ it volt per octave }}{{ br }}
+{{ br }}
+Control voltages can be unipolar or bipolar. Unipolar signals normally go +/- 2.5v and unipolar ones normally go 0v - 8v.
+                                
