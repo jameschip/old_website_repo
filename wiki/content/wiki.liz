@@ -4,3 +4,4 @@ This is a place where I will be keeping various things that I have been research
 
 {{ li ./book_list.html { Reading lists } }} {{ br }}
 {{ li ./eurorack.html { Eurorack synths } }} {{ br }}        
+{{ li ./linux.html { Linux notes } }} {{ br }}
