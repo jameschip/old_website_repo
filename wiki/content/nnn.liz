@@ -1,0 +1,19 @@
+{{ h1 nnn file browser}}
+
+This is a good light weight terminal file browser. 
+
+{{ h2 Setting up }}
+
+{{ h3 Enable cd on quit. }}
+{{ li https://github.com/jarun/nnn/tree/master/misc/quitcd { Quit on cd files } }}{{ br }}{{ br }}
+Create the file {{ bo ./config/fish/functions/n.fish }} and paste the contents of the cd on quit file for fish file.
+Remove the -x from the export statments so that ^G is the only wat to cd on quit. Start nnn as just n for cd on quit to work. 
+
+{{ h3 Set defaults.}}
+Set some default options in your {{ bo .bashrc }}.
+{{ cb 
+EDITOR=micro   # edit files using micro when e is pressed
+PAGER=less     # preview files using less
+}}
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="James Chip website." />
+    <meta name="keywords" content="james chip, chiptune, solo rpg" />
+    <meta name="author" content="James Henderson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+</head>
+
+<body>
+
+    <div class="topBar"> 
+        <div class="titleContainer">
+            <div class="titleImage"></div>
+            <div>
+                <span class="titleText">James Chip</span>
+                <div class="socilaLinks">
+                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
+                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
+                        </a>
+                        <a href='https://www.github.com/jameschip' target='_blank'>
+                            <img src='../media/social/github_logo.png' class="socialImage" />
+                        </a>
+                        <a href='https://boardgames.social/@big_chip' target='_blank'>
+                            <img src='../media/social/mastodon_logo.png' class="socialImage" />
+                        </a>
+                        <a href='https://www.youtube.com/user/jameschip22' target='_blank'>
+                            <img src='../media/social/youtube_logo.png' class="socialImage" />
+                        </a>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="pageContainer">
+        
+            <div class="content">
+                <div class="nav">
+                    <a href="../software.html">Software</a><div class="divider">|</div>
+                    <a href="../games.html">Games</a><div class="divider">|</div>
+                    <a href="../audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./wiki.html">Wiki</a><div class="divider">|</div>
+                    <a href="../about.html">About</a>
+                </div>
+                <h1>nnn file browser</h1>
+
+This is a good light weight terminal file browser. 
+
+<h2>Setting up </h2>
+
+<h3>Enable cd on quit. </h3>
+<a href="https://github.com/jarun/nnn/tree/master/misc/quitcd">{ Quit on cd files } </a><br><br>
+Create the file <b>./config/fish/functions/n.fish </b> and paste the contents of the cd on quit file for fish file.
+Remove the -x from the export statments so that ^G is the only wat to cd on quit. Start nnn as just n for cd on quit to work. 
+
+<h3>Set defaults.</h3>
+Set some default options in your <b>.bashrc </b>.
+<pre><code>EDITOR=micro   # edit files using micro when e is pressed
+PAGER=less     # preview files using less
+</code></pre>
+
+
+
+                <div class="footer"> 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../media/social/cc.svg" class="socialImage" ></img></a> 
+                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

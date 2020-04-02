@@ -1,0 +1,31 @@
+{{ h1 Manjaro linux }}
+
+{{ h2 Post install }}
+
+After a fresh manjaro install try not to forget to do the following.
+
+{{ h3 Install drivers }}
+Go to the manjaro setting manager and select the hardware config and click auto install drivers. I have an nvidia card that unfortunatly only functions properly with the proprietart driver 
+so use that.
+
+{{ h3 Disable grub timeout }}
+The grub timeout just slows boot down if it is the only system installed. Edit file {{ bo /etc/default/grub }} loot for the line starting GRUB_TIMEOUT and change it to 
+{{ br }}
+{{ cb
+GRUB_TIMEOUT=0
+}}{{ br }}
+
+{{ h2 Cleaning package cache  }}
+
+Pacman keeps a package cache that can grow to quite a big size. Clear thee cache
+so that it has only the last 3 packages in it with the following command. {{ br }}
+{{ cb 
+sudo paccache -r
+}} {{ br }}
+Or choose to keep a number of packages. This will keep only one cached package. {{ br }}
+{{ cb 
+sudo paccache -rk 1
+}}
+{{ br }}
+
+

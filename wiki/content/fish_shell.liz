@@ -1,0 +1,41 @@
+{{ h1 The fish shell }}
+The fish shell is an interactive shell for linux with syntax highlighting and auto completion.
+
+{{ h2 Changing to  fish. }}
+
+You could just put this in the bottom of your .bashrc and that way your default bash
+setup runs and then throws you into fish.{{ br }}
+
+{{ cb exec fish }}
+
+Or to omake fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells {{ br }}
+
+{{ cb  echo /usr/local/bin/fish | sudo tee -a /etc/shells }}
+
+Change your default shell to fish {{ br }}
+{{ cb  chsh -s /usr/local/bin/fish }}
+
+{{ h2 Change default prompt }}
+
+Create the file .config/fish/functions/fish_prompt.fish and create the fish_prompt function in it.
+The mionimalone I like is: {{ br }}
+{{ cb 
+function fish_prompt
+    set_color $fish_color_cwd
+    echo -n (pwd)
+    set_color normal
+    echo -n -e '\n$ '
+end
+}}
+
+{{ h2 Change the default greeting }}
+
+create the file ./config/fish/functions/fish_greeting.fish and create the fish_greeting function in it.
+For a blank message just use an empty function. {{ br }}
+{{ cb 
+function fish_greeting
+end
+}}
+{{ br }}
+
+

@@ -1,0 +1,9 @@
+{{ h1 Linux setup notes.}}
+
+These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. {{ br }}
+{{ br }}
+{{ li ./manjaro.html { Manjar notes } }} {{ br }}
+
+{{ h2 Software. }}
+{{ li ./fish_shell.html { Notes on fish shell } }}{{ br }}
+{{ li ./nnn.html { Notes on nnn } }}{{ br }}
