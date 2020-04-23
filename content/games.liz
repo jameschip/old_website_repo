@@ -4,6 +4,9 @@
 {{ br }}
 {{ br }}
 
+{{ im ./media/games/queen_returns.png }}
+{{ li ./the_queen_returns.html { 2020 The Queen Returns } }} - Writing letters to an absentee queen. }}{{br}}
+
 {{ im ./media/games/adventurer.png }}
 {{ li ./the_adventurer.html { 2019 The Adventurer } }} - A solo journal writing RPG. {{ br }}
 

@@ -1,0 +1,18 @@
+{{ im ./media/games/queen_returns.png }}
+{{ h1 The Queen Returns }}
+
+{{ li https://jameschip.itch.io/the-queen-returns { The Queen Returns on itch.io } }} {{br}}{{br}}
+<iframe src="https://itch.io/embed/620634?link_color=f449d5" width="552" height="167" frameborder="0"><a href="https://jameschip.itch.io/the-queen-returns">The Queen Returns by James Chip</a></iframe>
+{{br}}{{br}}
+The Queen Returns is a solo rpg about writing letters to a queen who  has left the country in secret. You will need a tarot deck; a couple of coins to flip; somewhere to compose your letters and a little bit of time to play.
+
+{{ h2 Gameplay.}}
+{{ im ./media/games/queen_play_image.jpg }}
+{{ bq "A warrior Queen has been amassing forces on our northern border and has been running skirmishes into the villages near the border. The warriors all wear black bands over their eyes and move with inhuman speed on foot. The people of the border region are weary and are hoping for support from their Queen. I pray that you can return soon, while there is still something for you to return to." }}
+{{ bo Current affairs. }} Draw tarot cards and use the card image and the game prompts to reveal the events that happen while the Queen is gone. Will the people revolt against the crown? Are people in the royal court plotting a coup? Use different tarot decks to tell  different stories.
+{{br}}{{br}}
+{{ bo Forge history. }} Throw coins to find out if the country resists an invasion, is overthrown by rebellion or falls into ruin in the Queen's absence.
+{{br}}{{br}}
+{{ bo Homecoming. }} The Queen returns to the country, discover how the country has changed while she has been gone and how her homecoming is received.
+{{br}}{{br}}
+{{ bo Two player variant. }} The game also includes a small two player variant where you post letters to a friend. The game ends with an in person meeting when your friend comes to your house to finish the story.
