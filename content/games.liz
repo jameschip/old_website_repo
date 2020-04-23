@@ -1,9 +1,6 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
-{{ br }}
-{{ br }}
-
 {{ im ./media/games/queen_returns.png }}
 {{ li ./the_queen_returns.html { 2020 The Queen Returns } }} - Writing letters to an absentee queen.{{br}}
 
