@@ -1,5 +1,5 @@
 
-{{ im ./media/books.jpg }}
+{{ im ./media/wiki/books.jpg }}
 {{ h1 Reading Lists }}
 
 This is a place where i am keeping a list of all lof the books I have read or am currently reading.

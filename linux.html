@@ -22,13 +22,13 @@
                             <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
                         </a>
                         <a href='https://www.github.com/jameschip' target='_blank'>
-                            <img src='../media/social/github_logo.png' class="socialImage" />
+                            <img src='./media/social/github_logo.png' class="socialImage" />
                         </a>
                         <a href='https://boardgames.social/@big_chip' target='_blank'>
-                            <img src='../media/social/mastodon_logo.png' class="socialImage" />
+                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
                         </a>
                         <a href='https://www.youtube.com/user/jameschip22' target='_blank'>
-                            <img src='../media/social/youtube_logo.png' class="socialImage" />
+                            <img src='./media/social/youtube_logo.png' class="socialImage" />
                         </a>
                 </div>
             </div>
@@ -38,43 +38,24 @@
         
             <div class="content">
                 <div class="nav">
-                    <a href="../software.html">Software</a><div class="divider">|</div>
-                    <a href="../games.html">Games</a><div class="divider">|</div>
-                    <a href="../audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./software.html">Software</a><div class="divider">|</div>
+                    <a href="./games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio.html">Audio</a><div class="divider">|</div>
                     <a href="./wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="../about.html">About</a>
+                    <a href="./about.html">About</a>
                 </div>
-                <h1>Manjaro linux </h1>
+                <h1>Linux setup notes.</h1>
 
-<h2>Post install </h2>
-
-After a fresh manjaro install try not to forget to do the following.
-
-<h3>Install drivers </h3>
-Go to the manjaro setting manager and select the hardware config and click auto install drivers. I have an nvidia card that unfortunatly only functions properly with the proprietart driver 
-so use that.
-
-<h3>Disable grub timeout </h3>
-The grub timeout just slows boot down if it is the only system installed. Edit file <b>/etc/default/grub </b> loot for the line starting GRUB_TIMEOUT and change it to 
+These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. <br>
 <br>
-<pre><code>GRUB_TIMEOUT=0
-</code></pre><br>
+<a href="./manjaro.html">{ Manjaro notes } </a> <br>
 
-<h2>Cleaning package cache  </h2>
-
-Pacman keeps a package cache that can grow to quite a big size. Clear thee cache
-so that it has only the last 3 packages in it with the following command. <br>
-<pre><code>sudo paccache -r
-</code></pre> <br>
-Or choose to keep a number of packages. This will keep only one cached package. <br>
-<pre><code>sudo paccache -rk 1
-</code></pre>
-<br>
-
-
+<h2>Software. </h2>
+<a href="./fish_shell.html">{ Notes on fish shell } </a><br>
+<a href="./nnn.html">{ Notes on nnn } </a><br>
 
                 <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../media/social/cc.svg" class="socialImage" ></img></a> 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
                     <span> © James Henderson 2020 BY-NC-SA 4.0</span>
                 </div>
             </div>

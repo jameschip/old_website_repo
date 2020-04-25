@@ -1,4 +1,4 @@
-{{ im ./media/wiki.jpg }}
+{{ im ./media/wiki/wiki.jpg }}
 {{ h1 Wiki }}
 This is a place where I will be keeping various things that I have been researching or learning as I go along. {{ br }} {{ br }}
 
