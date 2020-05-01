@@ -1,0 +1,20 @@
+{{ im ./media/games/river_trash.png }}
+
+{{ h1 River Trash }}
+
+{{ li https://jameschip.itch.io/river-trash { River Trash on itch.io } }} {{ br }} {{ br }}
+<iframe src="https://itch.io/embed/626041?link_color=f449d5" width="552" height="167" frameborder="0"><a href="https://jameschip.itch.io/river-trash">River Trash by James Chip</a></iframe>
+{{ br }}{{ br }}
+River Trash is a single page solo RPG about a journey to the sea along a picturesque river; by a piece of trash.
+It was written for {{ li https://itch.io/jam/trash-jam/entries { Trash Jam } }}, a game jam for trash games, All you need to play 
+this game is a standard deck of playing cards.
+{{ h2 You Are Trash }}
+During the game you play the part of a piece of trash that has been discarded into a river. Draw a card an discover what type
+of trash you are!
+{{ h2 Float }}
+As you float down stream draw cards to discover what you see from your river and the effect that you are having on the waters.
+{{ h2 The Sea! }}
+The game finishes with your arrival at the sea! What a journey you have been on!
+{{ h2 DO NOT THROW TRASH IN A RIVER!}}
+While this game has you playing the part of a piece of trash you should not be actual trash. If you throw anything in a river then you are trash.
+

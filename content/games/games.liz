@@ -1,8 +1,11 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
+{{ im ./media/games/river_trash.png }}
+{{ li ./river_trash.html { 2020 River Trash } }} - You are trash. Float!{{ br }}
+
 {{ im ./media/games/queen_returns.png }}
-{{ li ./the_queen_returns.html { 2020 The Queen Returns } }} - Writing letters to an absentee queen.{{br}}
+{{ li ./the_queen_returns.html { 2020 The Queen Returns } }} - Writing letters to an absentee queen.{{ br }}
 
 {{ im ./media/games/adventurer.png }}
 {{ li ./the_adventurer.html { 2019 The Adventurer } }} - A solo journal writing RPG. {{ br }}
