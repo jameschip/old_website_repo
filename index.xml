@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+<title>The James Chip RSS</title>
+<link>https://www.jameschip.io</link>
+<description>The projects and ramblings of James Chip</description>
+
+  <item>
+    <title>River Trash</title>
+    <link>http://www.jameschip.io/river_trash.html</link>
+    <description>A game about being trash in a river!</description>
+  </item>
+
+  <item>
+    <title>The Queen Returns</title>
+    <link>http://www.jameschip.io/the_queen_returns.html</link>
+    <description>A game about an absentee Queen!</description>
+  </item>
+
+  <item>
+     <title>The Adventurer</title>
+     <link>http://www.jameschip.io/the_adventurer.html</link>
+     <description>A game about a lone travelers journal!</description>
+   </item>
+
+   <item>
+     <title>The River</title>
+     <link>http://www.jameschip.io/the_river.html</link>
+     <description>A tool for making static websites!</description>
+   </item>
+
+   <item>
+     <title>Almanac</title>
+     <link>http://www.jameschip.io/almanac.html</link>
+     <description>Journaling in a shell script!</description>
+   </item>
+
+</channel>
+</rss> 
