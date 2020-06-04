@@ -1,6 +1,9 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
+{{ im ./media/games/light.png }}
+{{ li ./light.html { 2020 Light } }} - Alone on a lighthouse. {{ br }}
+
 {{ im ./media/games/river_trash.png }}
 {{ li ./river_trash.html { 2020 River Trash } }} - You are trash. Float!{{ br }}
 
