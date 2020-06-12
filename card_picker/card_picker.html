@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<head>
+
+	<style>
+
+		* {
+			padding: 0px;
+			margin: 0px;
+			border: 0, none, transparent;
+			background-color: #D5D5D5;
+			outline: none;
+		}
+
+		button::-moz-focus-inner {
+			border: none;
+		}
+
+		button:focus {
+			outline: none;
+		}
+
+		button:active {
+			outline: none;
+		}
+		
+		button {
+			display: block;
+			border: none;
+			padding: 0px;
+			height: 8em;
+			width: 8em;
+			outline: none;
+		}
+
+		button img {
+			width: 8em;
+			height: auto;
+			outline: none;
+		}
+
+		suit_key {
+			display: flex;
+			flex-direction: row;
+			padding: 0px;
+		}
+
+		.vContainer {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			width: 32em;
+			margin: auto;
+		}
+
+		.hContainer {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.sText {
+			padding-top: 0.5em;
+			text-align: center;
+			font-family: Arial,Helvetica, sans-serif;
+		}
+
+		.cardStyle {
+			padding-bottom: 0.5em;
+			text-align: center;
+			font-family: Arial,Helvetica, sans-serif;
+			font-size: 2em;
+			width: inherit;
+		}
+
+		
+	</style>
+	<script>
+
+		var spades = []
+		var hearts = []
+		var clubs = []
+		var diamonds = []
+
+		var s_index = 0
+		var h_index = 0
+		var c_index = 0
+		var d_index = 0
+
+		function setup() {
+			console.log("Running setup!")
+
+			spades = ["ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"]
+			hearts = ["ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"]
+			clubs = ["ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"]
+			diamonds = ["ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"]
+
+			shuffle( hearts )
+			shuffle( clubs )
+			shuffle( clubs )
+			shuffle( diamonds )
+			s_index = 0
+			h_index = 0
+			c_index = 0
+			d_index = 0
+
+			document.getElementById("card").textContent = " "
+			
+			document.getElementById("pull_heart").addEventListener("click", draw_h)
+			document.getElementById("pull_diamond").addEventListener("click", draw_d)
+			document.getElementById("pull_club").addEventListener("click", draw_c)
+			document.getElementById("pull_spade").addEventListener("click", draw_s)
+			
+			
+		}
+
+		function draw_h() {
+			if ( h_index >= hearts.length ) {
+				h_index = 0;
+				shuffle( hearts )
+			}
+			document.getElementById("card").textContent = hearts[ h_index++ ] + " OF HEARTS."
+			
+		}
+
+		function draw_d() {
+			if ( d_index >= diamonds.length ) {
+				d_index = 0;
+				shuffle( diamonds )
+			}
+			document.getElementById("card").textContent = diamonds[ d_index++ ] + " OF DIAMONDS."
+		}
+
+		function draw_c() {
+			if ( c_index >= clubs.length ) {
+				c_index = 0;
+				shuffle( clubs )
+			}
+			document.getElementById("card").textContent = clubs[ c_index++ ] + " OF CLUBS."
+			
+		}
+
+		function draw_s() {
+			if ( s_index >= spades.length ) {
+				s_index = 0;
+				shuffle( spadess )
+			}
+			document.getElementById("card").textContent = spades[ s_index++ ] + " OF SPADES."
+			
+		}
+
+
+		function shuffle( array ) {
+		  var currentIndex = array.length, temporaryValue, randomIndex;
+		
+		  // While there remain elements to shuffle...
+		  while (0 !== currentIndex) {
+		
+		    // Pick a remaining element...
+		    randomIndex = Math.floor(Math.random() * currentIndex);
+		    currentIndex -= 1;
+		
+		    // And swap it with the current element.
+		    temporaryValue = array[currentIndex];
+		    array[currentIndex] = array[randomIndex];
+		    array[randomIndex] = temporaryValue;
+		  }
+		
+		  return array;
+		}	
+	</script>
+</head>
+
+<body onload="setup()">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="cardStyle" id="card"></div>
+		
+		<div class="hContainer">
+			<div class="vContainer">
+				<button id="pull_spade"><img src="spade.png" /></button>
+				<div class="sText">Locations</div>
+			</div>
+			<div class="vContainer">
+				<button id="pull_heart"><img src="heart.png" /></button>
+				<div class="sText">Events</div>
+			</div>
+			<div class="vContainer">
+				<button id="pull_diamond"><img src="diamond.png" /></button>
+				<div class="sText">Beings</div>
+			</div>
+			<div class="vContainer">
+				<button id="pull_club"><img src="club.png" /></button>
+				<div class="sText">Things</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
