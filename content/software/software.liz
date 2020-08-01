@@ -2,6 +2,12 @@
 
 {{ h1 Software. }}
 
+{{ im ./media/software/zk_logo.png }}
+{{ li ./zk.html { 2020 ZK } }} - A personal implementation of a zettelkasten. 
+
+{{ im ./media/software/minitools.png }}
+{{ li ./mini_tools.html { 2020 Mini Tools } }} - Small tools for writing and drawing. 
+
 {{ im ./media/software/river.png }}
 {{ li ./the_river.html { 2020 The River } }} - Tools for creating static websites.  
 

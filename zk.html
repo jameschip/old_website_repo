@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="James Chip website." />
+    <meta name="keywords" content="james chip, chiptune, solo rpg" />
+    <meta name="author" content="James Henderson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+</head>
+
+<body>
+
+    <div class="topBar"> 
+        <div class="titleContainer">
+            <div class="titleImage"></div>
+            <div>
+                <span class="titleText">James Chip</span>
+                <div class="socilaLinks">
+                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
+                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
+                        </a>
+                        <a href='https://www.github.com/jameschip' target='_blank'>
+                            <img src='./media/social/github_logo.png' class="socialImage" />
+                        </a>
+                        <a href='https://boardgames.social/@big_chip' target='_blank'>
+                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
+                        </a>
+                        <a href='https://www.youtube.com/user/jameschip22' target='_blank'>
+                            <img src='./media/social/youtube_logo.png' class="socialImage" />
+                        </a>
+                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
+                            <img src='./media/social/rss.png' class="socialImage" />
+                        </a>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="pageContainer">
+        
+            <div class="content">
+                <div class="nav">
+                    <a href="./software.html">Software</a><div class="divider">|</div>
+                    <a href="./games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./wiki.html">Wiki</a><div class="divider">|</div>
+                    <a href="./about.html">About</a>
+                </div>
+                <img src="./media/software/zk_logo.png"></img>
+<h1>ZK </h1>
+<a href="https://github.com/jameschip/Zettelkasten">( Zk on github ) </a> <br> <br>
+
+This is an implementation of a zettelkasten (German, slip box) journaling method for Linux. The basic idea of a Zettelkasten is that short ideas, or notes, are made on numbered sips of paper kept in boxes. These notes have the following properties in this implementation:
+
+    <ul><li>A note has a title.</li>
+    <li>A note has a short idea or bit of information on it.</li>
+    <li>A note can have a number of tags associated with it that group them into contexts. </li>
+    <li>A note can also have other notes linked to it by referencing other notes numbers. </li>
+    <li>A link to another note has a context associated with it, this is the reason why these two notes are linked. </li></ul>
+
+One of the most important parts here is the context given to the links between notes. This context is more useful than just providing a title, it does more than tell you which note is linked; it tells you WHY! This extra context seems insignificant on paper but makes a huge difference in practice.
+<br><br>
+Assume for instance we have 2 entries in our Zettelkasten with the titles "Ferns" and "Spores". If "Ferns" has a link to "Spores" and just the title of the entries is used then we have little idea of how spores are related to ferns. If however instead we have a link to the "Spores" note with the context "Ferns reproduce using spores" we now know why the notes are related.
+
+<h2>Purposeful limits.</h2>
+
+There are limits imposed by design.
+
+    <ul><li>A notes content may only be 500 characters. Notes should be short and punchy, you are not writing an essay per entry. Break longer things into multiple notes. </li>
+    <li>You may never edit a notes content, If you need to provide corrections then create a new note and link them. This will not only teach you about the topic; but also the way you learn. </li>
+    <li>You may never remove a note from the Zettelkasten. There is no point to removing the past. </li></ul>
+
+<h2>How? </h2>
+
+Pull this repository and run the make file. The built binary will be /build/zk. Move this to somewhere in your path and use from the command line. More complete instructions on how to use the software will be available somewhere.
+
+<h2>Where? </h2>
+
+The entries in created by zk will be in a folder in ~/Zettelkasten. All of the entries will be in an extension less numbed text file counting from 0 upwards by one every time you create a new entry.
+
+<h2>What format? </h2>
+
+It was important from the offset that the entries this Zettelkasten are in plain text and readable from outside the application itself. This also means that, providing it uses the same format, other software would be able to interact with your entries in a meaningful way.
+Entries have a header section that is used to define things like tags, links to other entries and the title. Anything outside of this header material is considered the content of entry itself.
+Header sections begin and end with the string ---\n and each item is on its own line. The first character of the line indicates what data that line holds.
+
+    <ul><li>> The title </li>
+    <li># - A tag </li>
+    <li>~ - A link to another entry.</li></ul>
+
+An example file is:
+
+<pre><code>> The title of the note
+# tag_has_no_spaces
+# another_tag
+~ {10} : This links to entry 10 with this context text.
+~ {13} : and this links to 13 with this context text.
+---
+</code></pre>
+This is the content of the entry!
+
+<h2>Why? </h2>
+
+I built this for me. This is the note taking software I wanted. I share it here in case others may find it useful and so other may learn form (my mistakes in) the code.
+                <div class="footer"> 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
+                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
