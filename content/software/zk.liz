@@ -55,3 +55,29 @@ This is the content of the entry!
 {{ h2 Why? }}
 
 I built this for me. This is the note taking software I wanted. I share it here in case others may find it useful and so other may learn form (my mistakes in) the code.
+
+{{ h2 Navigating }}
+This is very much a personal project so documentation is a bit thin on the ground. If you want to know how to use ZK fully the best way to learn is to read the code. Never the less here is my attempt to document how to use zk as best as i can.
+
+{{ h3 Entry selection }}
+Screen that just lists all the entries.
+
+    {{ bp {a} - Goto add entry screen. }}
+    {{ bp {f} - Filter entries by tag.}}
+    {{ bp {c} - Clear filter. }}
+    {{ bp {return} - Read an entry. }}
+    {{ bp {q} - quit. }}
+
+{{ h3 Add entry Screen }}
+Input the details for your entry.
+
+    {{ bp {tab} - Change focus. }}
+    {{ bp {return} - Confirm when on Ok or Cancel. }}
+
+{{ h3 Read entry screen }}
+A screen that displays an entry.
+
+    {{ bp {L} - Add a link to the entry.}}
+    {{ bp {T} - Lists all entry tags. ( {a} add a tag while tags are listed.) }}
+    {{ bp {q} - close entry.}}
+    {{ bp {return} - goto selected link.}}
