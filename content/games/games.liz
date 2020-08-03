@@ -1,4 +1,3 @@
-{{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
 {{ im ./media/games/light.png }}

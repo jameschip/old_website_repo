@@ -1,4 +1,3 @@
-{{ im ./media/audio/audio.jpg }} {{ br }}
 
 {{ h1 Audio.}}
 
