@@ -17,3 +17,6 @@ It is good for tasks such as laying out poetry. {{br}} {{br}}
 Nove around with the arrow keys and use 1 - 8 to put a colour where the cursor is. If you wish to keep an image the take a screen shot.{{br}}{{br}}
 
 {{ bo F1 }} - Exit. {{br}}
+{{ bo l }} - Line mode. {{br}}
+{{ bo c }} - Clear. {{br}}
+{{ bo q }} - Quit. {{br}}
