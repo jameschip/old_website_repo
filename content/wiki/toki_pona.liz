@@ -2,15 +2,15 @@
 
 {{ h1 Toki Pona }}
 
-mi pali e kalama mute lili.
+{{ it mi pali e kalama mute lili. }} {{ br }}{{ br }}
 
 Toki pona is a constructed language created by Sonja Lang that has 120 official words. It was designed to simplify thought and the way that ideas are communicated. 
 The language is very minimalist and is contextual in nature, {{ bo ona }} can mean {{ it he, she, it }} or {{ it they }}. There are no capital letters in toki pona. 
 
 {{ h2 Alphabet }}
 
-Toki pona only uses 14 letters. The vowels are {{ bo a, e, i, o }} and {{ bo u }}. These are all pronounced similar to how they are in English. {{ br }}
-The consonents are {{ br m, n, p, t, k, s, w}} and {{ bo j }}. These are all pronounced like the English except for j which is pronounced like a y.
+Toki pona only uses 14 letters. The vowels are {{ bo a, e, i, o }} and {{ bo u }}. These are all pronounced similar to how they are in English.
+The consonents are {{ bo m, n, p, t, k, s, w}} and {{ bo j }}. These are all pronounced like the English except for j which is pronounced like a y.
 
 {{ h1 Resouces }}
 
