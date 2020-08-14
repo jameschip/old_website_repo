@@ -5,7 +5,19 @@ It is a UNIX like system that shares many similarities with other UNIX like such
 
 {{ h2 Directory structure }}
 
-{{ bo / }} - the root directory. {{ br }}
+{{ bo / }} - the root directory. Everything starts here. {{ br }}
+{{ bo /bin }} - Binaries. This is where all the binaries for all users live. {{ br }}
+{{ bo /sbin }} - System binaries only for root or sudo users. {{ br }}
+{{ bo /lib }} - Shared libs needed by binaries in /bin and /sbin {{ br }}
+{{ bo /dev }} - Device files. Serial ports ans such. {{ br }}
+{{ bo /etc }} - Configuration files for the system. {{ br }}
+{{ bo /usr }} - Binaries and libs for the user system. {{ br }}
+{{ bo /home }} - The users home data directory. All your personal stuff here. {{ br }}
+{{ bo /tmp }} - Temporary files needed by processes. {{ br }}
+{{ bo /var }} - Variable files such as logs and caches. {{ br }}
+{{ bo /boot }} - Files important for booting the system. {{ br }}
+{{ bo /proc }} - Information about running processes. {{ br }}
+{{ bo /opt }} - 3rd party software goes here most of the time. 
 
 {{ h1 Linux setup notes.}}
 
