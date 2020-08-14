@@ -1,6 +1,14 @@
+{{ h1 Now.}}
 {{ im ./media/about.jpeg }} {{ br }}
 
-{{ h1 About.}}
+{{ h2  Scenes. }}
 
-I am an individual working across multiple disciplines based out of the UK. I write software, make music, tinker with tabletop game design, walk among trees and grow plants. Welcome to my corner of the internet.
+Currently working on a tool called Scenes for creating images with text in the linux console. The colour pallet is limited to B&W. These images are intended to then be used in an interactive narative game played in the terminal.
+
+{{ h2 Learning toki pona }}
+
+I have inspired by others to try my hand at learning toki pona; a constructed language by Sonja Lang. My notes on the language can be found in the wiki.
+
+{{ h2 The Adventurer: paths crossed }}
+A two player variant of The Adventurer; a narative tabletop game.
 
