@@ -2,7 +2,7 @@
 
 {{ im ./media/about.jpeg }} {{ br }}
 
-{{ h2  Scenes. }}
+{{ h2  Scenes }}
 
 Currently working on a tool called Scenes for creating images with text in the linux console. The colour pallet is limited to B&W. These images are intended to then be used in an interactive narative game played in the terminal.
 
