@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,28 +44,29 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <h1>nnn file browser</h1>
+                
+<img src="./media/software/river.png"></img>
 
-This is a good light weight terminal file browser. 
+<h1>The River. </h1>
 
-<h2>Setting up </h2>
+The river is a collection of lightweight tools for creating static websites and consists of <a href="./the_tiffy.html">Tiffy</a> and <a href="./the_lizard.html">Lizard </a>.
+They were designed for fast and easy use and impose simple limits on the user to inspire creative design. The website you are reading this on was designed and 
+built using The River. <br>
 
-<h3>Enable cd on quit. </h3>
-<a href="https://github.com/jarun/nnn/tree/master/misc/quitcd">{ Quit on cd files } </a><br><br>
-Create the file <b>./config/fish/functions/n.fish </b> and paste the contents of the cd on quit file for fish file.
-Remove the -x from the export statments so that ^G is the only wat to cd on quit. Start nnn as just n for cd on quit to work. 
+<img src="./media/software/tiffy.png"></img>
+<a href="./software/the_tiffy.html">{ The Tiffy } </a> - A minimalist static website generator.
 
-<h3>Set defaults.</h3>
-Set some default options in your <b>.bashrc </b>.
-<pre><code>EDITOR=micro   # edit files using micro when e is pressed
-PAGER=less     # preview files using less
-</code></pre>
+<img src="./media/software/lizard.png"></img>
 
+<a href="./software/the_lizard.html">{ The Lizard } </a> - A simple syntax for web pages on the river.
+
+<br> 
 
 
                 <div class="footer"> 

@@ -2,7 +2,6 @@
 {{ h1 Wiki }}
 This is a place where I will be keeping various things that I have been researching or learning as I go along. {{ br }} {{ br }}
 
-{{ li ./book_list.html { Reading lists } }} {{ br }}
-{{ li ./eurorack.html { Eurorack synths } }} {{ br }}        
-{{ li ./linux.html { Linux notes } }} {{ br }}
-{{ li ./toki_pona.html { Toki Pona } }} {{ br }}
+{{ li ./wiki/eurorack.html { Eurorack synths } }} {{ br }}        
+{{ li ./wiki/linux.html { Linux notes } }} {{ br }}
+{{ li ./wiki/toki_pona.html { Toki Pona } }} {{ br }}

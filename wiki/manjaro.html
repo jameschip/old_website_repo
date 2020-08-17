@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,24 +44,43 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <img src="./media/games/light.png"></img>
+                
+<h1>Manjaro linux </h1>
 
-<h1>Light </h1>
+<h2>Post install </h2>
 
-<a href="http://jameschip.itch.io/light">{ Download Light on itch.io} </a> <br> <br>
-<iframe src="https://itch.io/embed/662099?link_color=f449d5" width="552" height="167" frameborder="0"><a href="https://jameschip.itch.io/light">Light by James Chip</a></iframe>
-<br><br>
-Light is a journal keeping game about being a sole lighthouse keeper in exceptional circumstances. The two other keepers that were with you on the island have suddenly gone missing, leaving you to run the lighthouse by yourself. As if things couldn't be worse you were due to go back to the main land today and a storm, unlike any you have seen before, has rolled in and will delay your departure. Will you be able to keep the light shining? What happened to your other keepers? 
-<h2>What you will need. </h2>
-To play this game you will need a standard deck of cards; a tumbling block tower and some counters. The cards will act as an oracle, guiding your daily activities. The tower represents the light, if it falls then the light is allowed to go out and the game ends.
-<br><br>
-This game was written for <a href="https://itch.io/jam/wretched-jam">{ Wretched Jam } </a> 
+After a fresh manjaro install try not to forget to do the following.
+
+<h3>Install drivers </h3>
+Go to the manjaro setting manager and select the hardware config and click auto install drivers. I have an nvidia card that unfortunatly only functions properly with the proprietart driver 
+so use that.
+
+<h3>Disable grub timeout </h3>
+The grub timeout just slows boot down if it is the only system installed. Edit file <b>/etc/default/grub </b> loot for the line starting GRUB_TIMEOUT and change it to 
 <br>
+<pre><code>GRUB_TIMEOUT=0
+</code></pre><br>
+
+<h2>Cleaning package cache  </h2>
+
+Pacman keeps a package cache that can grow to quite a big size. Clear thee cache
+so that it has only the last 3 packages in it with the following command. <br>
+<pre><code>sudo paccache -r
+</code></pre> <br>
+Or choose to keep a number of packages. This will keep only one cached package. <br>
+<pre><code>sudo paccache -rk 1
+</code></pre>
+<br>
+
+
+
+
                 <div class="footer"> 
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
                     <span> © James Henderson 2020 BY-NC-SA 4.0</span>

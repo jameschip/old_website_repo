@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,50 +44,57 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <h1>The fish shell </h1>
-The fish shell is an interactive shell for linux with syntax highlighting and auto completion.
+                
+<img src="./media/software/lizard.png"></img>
 
-<h2>Changing to  fish. </h2>
+<h1>The Lizard </h1>
 
-You could just put this in the bottom of your .bashrc and that way your default bash
-setup runs and then throws you into fish.<br>
-
-<pre><code>exec fish </code></pre>
-
-Or to omake fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells <br>
-
-<pre><code>echo /usr/local/bin/fish | sudo tee -a /etc/shells </code></pre>
-
-Change your default shell to fish <br>
-<pre><code>chsh -s /usr/local/bin/fish </code></pre>
-
-<h2>Change default prompt </h2>
-
-Create the file .config/fish/functions/fish_prompt.fish and create the fish_prompt function in it.
-The mionimalone I like is: <br>
-<pre><code>function fish_prompt
-    set_color $fish_color_cwd
-    echo -n (pwd)
-    set_color normal
-    echo -n -e '\n$ '
-end
-</code></pre>
-
-<h2>Change the default greeting </h2>
-
-create the file ./config/fish/functions/fish_greeting.fish and create the fish_greeting function in it.
-For a blank message just use an empty function. <br>
-<pre><code>function fish_greeting
-end
-</code></pre>
+<a href="https://github.com/jameschip/Lizard">{ The Lizard on Github } </a> <br>
 <br>
 
+The Lizard is a simple syntax for creating content for web pages. Unlike markdown Lizard uses a single unified syntax for 
+all tags making it easier to remember, tags can also not be nested which promotes a single unified style on sites. <br>
+<br>
+<h3>Headers </h3> 
 
+Headers from h1 to h6 in size <br>
+
+<pre><code>{{ h1 title text }} </code></pre> 
+
+<h3>Links </h3>
+
+<pre><code>{{ li www.jameschip.io link text }} </code></pre>
+
+<h3>Images </h3>
+
+<pre><code>{{ im image_location image rollover text }} </code></pre> 
+
+
+<h3>Text style </h3>
+
+<code> <pre>
+{{ br }} just replaced with a liine break. <br>
+{{ bo bold text }} <br>
+{{ it italic text }} <br>
+{{ ul underlined text }} <br> 
+{{ bq this stuff is in a blockquote }} <br>
+{{ cb this is text in a code block }} 
+</pre></code>
+
+<h3>Lists </h3>
+<code><pre>
+this is text before the list. <br>  
+{{ bp bullet point text 1 }} <br>  
+{{ bp next list item }} <br>
+{{ bp next list item }} <br>
+this is tex after the list 
+</pre></code>
 
                 <div class="footer"> 
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 

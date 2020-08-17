@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,28 +44,43 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
                 
-<h1>Software. </h1>
+<h1>Linux notes </h1>
 
-<img src="./media/software/zk_logo.png"></img>
-<a href="./zk.html">{ 2020 ZK } </a> - A personal implementation of a zettelkasten. 
+Linux is an open source os (yes i know its just the kernel and what i am taking about is gnu+linux, piss off) created by Linus Torvalds.
+It is a UNIX like system that shares many similarities with other UNIX like such as BSD.
 
-<img src="./media/software/minitools.png"></img>
-<a href="./mini_tools.html">{ 2020 Mini Tools } </a> - Small tools for writing and drawing. 
+<h2>Directory structure </h2>
 
-<img src="./media/software/river.png"></img>
-<a href="./the_river.html">{ 2020 The River } </a> - Tools for creating static websites.  
+<b>/ </b> - the root directory. Everything starts here. <br>
+<b>/bin </b> - Binaries. This is where all the binaries for all users live. <br>
+<b>/sbin </b> - System binaries only for root or sudo users. <br>
+<b>/lib </b> - Shared libs needed by binaries in /bin and /sbin <br>
+<b>/dev </b> - Device files. Serial ports ans such. <br>
+<b>/etc </b> - Configuration files for the system. <br>
+<b>/usr </b> - Binaries and libs for the user system. <br>
+<b>/home </b> - The users home data directory. All your personal stuff here. <br>
+<b>/tmp </b> - Temporary files needed by processes. <br>
+<b>/var </b> - Variable files such as logs and caches. <br>
+<b>/boot </b> - Files important for booting the system. <br>
+<b>/proc </b> - Information about running processes. <br>
+<b>/opt </b> - 3rd party software goes here most of the time. 
 
-<img src="./media/software/almanac.jpg"></img>
-<a href="./almanac.html">{ 2019 Almanac } </a> - Short form journaling shell script.  
+<h1>Linux setup notes.</h1>
 
-<img src="./media/software/autograph.png"></img>
-<a href="./autograph.html">{ 2019 Autograph } </a> - A minimal markdown editor.
+These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. <br>
+<br>
+<a href="./manjaro.html">{ Manjaro notes } </a> <br>
+
+<h2>Software. </h2>
+<a href="./fish_shell.html">{ Notes on fish shell } </a><br>
+<a href="./nnn.html">{ Notes on nnn } </a><br>
 
 
                 <div class="footer"> 

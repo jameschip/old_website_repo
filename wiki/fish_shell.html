@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,48 +44,52 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <img src="./media/software/autograph.png"></img>
-<h1>Autograph </h1>
-<a href="https://github.com/jameschip/Autograph">( Autograph on github ) </a> <br> <br>
+                
+<h1>The fish shell </h1>
+The fish shell is an interactive shell for linux with syntax highlighting and auto completion.
 
-Autograph is a minimal markdown editor with simple and entirely keyboard driven interface.
-It has 2working modes which can be toggled between by pressing meta+d.
+<h2>Changing to  fish. </h2>
 
-<h2>Dual view mode. </h2>
+You could just put this in the bottom of your .bashrc and that way your default bash
+setup runs and then throws you into fish.<br>
 
-In dual view mode the file you are editing is displayed on the left of the interface and a preview of your files format is displayed on the right.
-The preview of your file is updated as you type so you can see your changes as  you go.
+<pre><code>exec fish </code></pre>
 
-<h2>Single view mode </h2>
+Or to omake fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells <br>
 
-Sometimes while in the flow of writing the constantly updating preview can be distracting. In single view mode the preview is hidden and only the file you are editing is displayed.
-You can switch back and forth between the preview and edit view by using the tab key.
+<pre><code>echo /usr/local/bin/fish | sudo tee -a /etc/shells </code></pre>
 
-<h2>Keyboard commands </h2>
+Change your default shell to fish <br>
+<pre><code>chsh -s /usr/local/bin/fish </code></pre>
 
-   <ul><li>meta+o -> Open. </li>
-   <li>meta+n -> New file. </li>
-   <li>meta+s -> Save. </li> 
-   <li>meta+S -> Save as. </li>
-   <li>meta+> -> Cursor to next heading. </li>
-   <li>meta+< -> Cursor to previous heading. </li>
-   <li>meta+d -> Toggle dual display mode. </li> 
-   <li>tab -> in single edit mode this key will change between edit or preview. </li></ul>
+<h2>Change default prompt </h2>
 
-<img src="./media/software/autograph_screen.png"></img>
+Create the file .config/fish/functions/fish_prompt.fish and create the fish_prompt function in it.
+The mionimalone I like is: <br>
+<pre><code>function fish_prompt
+    set_color $fish_color_cwd
+    echo -n (pwd)
+    set_color normal
+    echo -n -e '\n$ '
+end
+</code></pre>
 
-<h2>Libs used </h2>
+<h2>Change the default greeting </h2>
 
-The following libraries were used in creating this project.<br>
+create the file ./config/fish/functions/fish_greeting.fish and create the fish_greeting function in it.
+For a blank message just use an empty function. <br>
+<pre><code>function fish_greeting
+end
+</code></pre>
+<br>
 
-<a href="https://github.com/hundredrabbits/Themes">Ecosystem Themes </a> by Hundred rabbits. <br>
 
-<a href="https://github.com/jonschlinkert/remarkable">Remarkable markdown parser. </a> <br>
 
 
                 <div class="footer"> 

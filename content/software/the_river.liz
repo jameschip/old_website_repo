@@ -7,10 +7,10 @@ They were designed for fast and easy use and impose simple limits on the user to
 built using The River. {{ br }}
 
 {{ im ./media/software/tiffy.png }}
-{{ li ./the_tiffy.html { The Tiffy } }} - A minimalist static website generator.
+{{ li ./software/the_tiffy.html { The Tiffy } }} - A minimalist static website generator.
 
 {{ im ./media/software/lizard.png }}
 
-{{ li ./the_lizard.html { The Lizard } }} - A simple syntax for web pages on the river.
+{{ li ./software/the_lizard.html { The Lizard } }} - A simple syntax for web pages on the river.
 
 {{ br }} 

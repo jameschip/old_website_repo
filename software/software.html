@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,55 +44,33 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <img src="./media/software/lizard.png"></img>
+                
 
-<h1>The Lizard </h1>
+<h1>Software. </h1>
 
-<a href="https://github.com/jameschip/Lizard">{ The Lizard on Github } </a> <br>
-<br>
+<img src="./media/software/zk_logo.png"></img>
+<a href="./software/zk.html">{ 2020 ZK } </a> - A personal implementation of a zettelkasten. 
 
-The Lizard is a simple syntax for creating content for web pages. Unlike markdown Lizard uses a single unified syntax for 
-all tags making it easier to remember, tags can also not be nested which promotes a single unified style on sites. <br>
-<br>
-<h3>Headers </h3> 
+<img src="./media/software/minitools.png"></img>
+<a href="./software/mini_tools.html">{ 2020 Mini Tools } </a> - Small tools for writing and drawing. 
 
-Headers from h1 to h6 in size <br>
+<img src="./media/software/river.png"></img>
+<a href="./software/the_river.html">{ 2020 The River } </a> - Tools for creating static websites.  
 
-<pre><code>{{ h1 title text }} </code></pre> 
+<img src="./media/software/almanac.jpg"></img>
+<a href="./software/almanac.html">{ 2019 Almanac } </a> - Short form journaling shell script.  
 
-<h3>Links </h3>
-
-<pre><code>{{ li www.jameschip.io link text }} </code></pre>
-
-<h3>Images </h3>
-
-<pre><code>{{ im image_location image rollover text }} </code></pre> 
+<img src="./media/software/autograph.png"></img>
+<a href="./software/autograph.html">{ 2019 Autograph } </a> - A minimal markdown editor.
 
 
-<h3>Text style </h3>
 
-<code> <pre>
-{{ br }} just replaced with a liine break. <br>
-{{ bo bold text }} <br>
-{{ it italic text }} <br>
-{{ ul underlined text }} <br> 
-{{ bq this stuff is in a blockquote }} <br>
-{{ cb this is text in a code block }} 
-</pre></code>
-
-<h3>Lists </h3>
-<code><pre>
-this is text before the list. <br>  
-{{ bp bullet point text 1 }} <br>  
-{{ bp next list item }} <br>
-{{ bp next list item }} <br>
-this is tex after the list 
-</pre></code>
                 <div class="footer"> 
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
                     <span> © James Henderson 2020 BY-NC-SA 4.0</span>

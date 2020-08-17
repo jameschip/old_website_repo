@@ -2,12 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <base href="http://www.jameschip.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
 </head>
 
 <body>
@@ -42,41 +44,32 @@
             <div class="content">
                 <div class="nav">
                     <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software.html">Software</a><div class="divider">|</div>
-                    <a href="./games.html">Games</a><div class="divider">|</div>
-                    <a href="./audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki.html">Wiki</a>
+                    <a href="./software/software.html">Software</a><div class="divider">|</div>
+                    <a href="./games/games.html">Games</a><div class="divider">|</div>
+                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
+                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
+                    <a href="./wiki/wiki.html">Wiki</a>
                 </div>
-                <h1>Linux notes </h1>
+                
+<h1>nnn file browser</h1>
 
-Linux is an open source os (yes i know its just the kernel and what i am taking about is gnu+linux, piss off) created by Linus Torvalds.
-It is a UNIX like system that shares many similarities with other UNIX like such as BSD.
+This is a good light weight terminal file browser. 
 
-<h2>Directory structure </h2>
+<h2>Setting up </h2>
 
-<b>/ </b> - the root directory. Everything starts here. <br>
-<b>/bin </b> - Binaries. This is where all the binaries for all users live. <br>
-<b>/sbin </b> - System binaries only for root or sudo users. <br>
-<b>/lib </b> - Shared libs needed by binaries in /bin and /sbin <br>
-<b>/dev </b> - Device files. Serial ports ans such. <br>
-<b>/etc </b> - Configuration files for the system. <br>
-<b>/usr </b> - Binaries and libs for the user system. <br>
-<b>/home </b> - The users home data directory. All your personal stuff here. <br>
-<b>/tmp </b> - Temporary files needed by processes. <br>
-<b>/var </b> - Variable files such as logs and caches. <br>
-<b>/boot </b> - Files important for booting the system. <br>
-<b>/proc </b> - Information about running processes. <br>
-<b>/opt </b> - 3rd party software goes here most of the time. 
+<h3>Enable cd on quit. </h3>
+<a href="https://github.com/jarun/nnn/tree/master/misc/quitcd">{ Quit on cd files } </a><br><br>
+Create the file <b>./config/fish/functions/n.fish </b> and paste the contents of the cd on quit file for fish file.
+Remove the -x from the export statments so that ^G is the only wat to cd on quit. Start nnn as just n for cd on quit to work. 
 
-<h1>Linux setup notes.</h1>
+<h3>Set defaults.</h3>
+Set some default options in your <b>.bashrc </b>.
+<pre><code>EDITOR=micro   # edit files using micro when e is pressed
+PAGER=less     # preview files using less
+</code></pre>
 
-These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. <br>
-<br>
-<a href="./manjaro.html">{ Manjaro notes } </a> <br>
 
-<h2>Software. </h2>
-<a href="./fish_shell.html">{ Notes on fish shell } </a><br>
-<a href="./nnn.html">{ Notes on nnn } </a><br>
+
 
                 <div class="footer"> 
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
