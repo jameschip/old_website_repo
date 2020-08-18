@@ -1,5 +1,5 @@
-\e[4mWelcome to my clog (curl blog)\e[0m
+[4mWelcome to my clog (curl blog)[0m
 
-  usage: curl https://jameschip.io/clog
+  usage: curl https://www.jameschip.io/clog
 
 This is a placeholder.
