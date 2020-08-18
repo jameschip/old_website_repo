@@ -1,0 +1,6 @@
+[4mWelcome to my clog (curl blog)[0m
+
+useage: curl -s https://www.jameschip.io/clog/<POST ID>
+
+Posts:
+  0001  : The first post!
