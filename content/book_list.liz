@@ -2,9 +2,12 @@
 {{ im ./media/wiki/books.jpg }}
 {{ h1 Reading Lists }}
 
-This is a place where i am keeping a list of all lof the books I have read or am currently reading.
+This is a place where I keep a list of all of the books I have read or am currently reading.
 I started keeping this list as a way to encourage myself to read more but also to keep track of what
 I have and have not read.
+
+{{ h2 currently reading }}
+{{ it Going Postal }} - Terry Pratchet
 
 {{ h2 2020 reading }}
 {{ it toki pona: The Language of Good }} - Sonja Lang {{ br }}

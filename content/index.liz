@@ -8,11 +8,13 @@ Currently working on a tool called Scenes for creating images with text in the l
 
 {{ h2 Learning toki pona }}
 
-I have inspired by others to try my hand at learning toki pona; a constructed language by Sonja Lang. My notes on the language can be found in the wiki. I am trying to read and complete a couple of lessons in the official book every day if i can.
+I have been inspired by others to try my hand at learning toki pona; a constructed language by Sonja Lang. My notes on the language can be found in the wiki. I am trying to read and complete a couple of lessons in the official book every day if i can.
 
 {{ h2 The Adventurer: paths crossed }}
 A two player variant of The Adventurer; a narative tabletop game.
 
 {{ h2 Website rework }}
-Trying to reorganise and optimise this website to keep bandwith as low.
+Trying to reorganise and optimise this website to keep bandwith as low as possible.
 
+{{ The river }} 
+My static website generator {{ li ./software/the_river.html { The River } }} is getting an overhaul to make the output more organised and to also provide facility to build a text only version of the site.
