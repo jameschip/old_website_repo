@@ -1,6 +1,7 @@
-[4mWelcome to my clog (curl blog)[0m
+This is a curl blog (clog)!
 
-useage: curl -s https://www.jameschip.io/clog/<POST ID>
+useage: curl -s https://www.jameschip.io/clog/<POST_ID>
 
 Posts:
-  0001  : The first post!
+	ID	TITLE
+	2:	What is thisclog thing?
