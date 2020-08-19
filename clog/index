@@ -1,7 +1,3 @@
-This is a curl blog (clog)!
 
-useage: curl -s https://www.jameschip.io/clog/<POST_ID>
-
-Posts:
-	ID	TITLE
 	2:	What is thisclog thing?
+	5:	Catching ctrl+KEY in ncurses.
