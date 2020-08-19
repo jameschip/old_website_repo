@@ -1,9 +1,9 @@
-[4mWelcome to my clog[0m
+[4mWelcome to my clog[0m
 
 	Useage: curl -s http://www.jameschip.io/clog/<POST_ID>
 
-This clog is the smalles implementation of a blog that I could imagine!
+This clog is the smallest implementation of a blog that I could imagine!
 
 Posts:
-	2:	What is thisclog thing?
+	2:	What is this clog thing?
 	3:	Catching ctrl+KEY in ncurses.
