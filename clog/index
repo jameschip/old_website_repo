@@ -2,6 +2,8 @@
 
 	Useage: curl -s http://www.jameschip.io/clog/<POST_ID>
 
+Member of the clogring at http://www.jameschip.io/clogs/
+
 This clog is the smallest implementation of a blog that I could imagine!
 
 Posts:
