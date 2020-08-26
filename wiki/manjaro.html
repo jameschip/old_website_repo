@@ -78,6 +78,21 @@ Or choose to keep a number of packages. This will keep only one cached package. 
 </code></pre>
 <br>
 
+<h2>Fixing corrupted or invalud update </h2>
+
+At some point the cache has gotten out of sync or something. Update your package signing keys with: <br>
+
+<pre><code>sudo pacman -Sy archlinux-keyring manjaro-keyring
+sudo pacman-key --populate archlinux manjaro
+sudo pacman-key --refresh-keys
+sudo pacman -Syu
+</code></pre>
+
+and then clear your whole cache with and try an update again.<br>
+
+<pre><code>pacman -Scc
+pacman -Syu
+</code></pre>
 
 
 
