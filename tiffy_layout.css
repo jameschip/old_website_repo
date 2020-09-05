@@ -160,6 +160,11 @@ footer img {
         width: 1em;
     }
 
+	.svg {
+		height: 1em;
+		width: 1em;
+	}
+	
     .nav {
         padding-bottom: 1em;
         text-align: left;
