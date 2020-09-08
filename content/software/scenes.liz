@@ -1,4 +1,4 @@
-{{ im ./media/software/scenees.png }}
+{{ im ./media/software/scenes.png }}
 {{ h1 Scenes }}
 
 {{ li https://git.sr.ht/~jameschip/scenes { Scenes on Sourcehut } }}{{ br }}
