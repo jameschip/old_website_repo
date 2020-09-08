@@ -1,21 +1,22 @@
 
+{{ im ./media/software/software.png }}
 {{ h1 Software. }}
 
-{{ im ./media/software/scenes.png }}
-{{ li ./software/scenes.html ( 2020 Scenes ) }} - A small graphics tool.
-
-{{ im ./media/software/zk_logo.png }}
-{{ li ./software/zk.html { 2020 ZK } }} - A personal implementation of a zettelkasten. 
-
-{{ im ./media/software/minitools.png }}
-{{ li ./software/mini_tools.html { 2020 Mini Tools } }} - Small tools for writing and drawing. 
-
-{{ im ./media/software/river.png }}
-{{ li ./software/the_river.html { 2020 The River } }} - Tools for creating static websites.  
-
-{{ im ./media/software/almanac.jpg }}
-{{ li ./software/almanac.html { 2019 Almanac } }} - Short form journaling shell script.  
-
-{{ im ./media/software/autograph.png }}
-{{ li ./software/autograph.html { 2019 Autograph } }} - A minimal markdown editor.
-
+{{ li ./software/scenes.html ( 2020 Scenes ) }} {{ br }} 
+A small graphics and text layout tool for the linux terminal. {{ br }}
+{{ br }}
+{{ li ./software/zk.html { 2020 ZK } }}{{ br }}
+ A personal implementation of a zettelkasten. {{ br }}
+{{ br }}
+{{ li ./software/the_river.html { 2020 The River } }}{{ br }} 
+Tools for creating static websites. {{ br }}
+{{ br }}
+{{ li ./software/almanac.html { 2019 Almanac } }} {{ br }}
+Short form journaling shell script. {{ br }}
+{{ br }}
+{{ li ./software/autograph.html { 2019 Autograph } }} {{ br }}
+A minimal markdown editor.{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
