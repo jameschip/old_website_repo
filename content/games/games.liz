@@ -1,18 +1,23 @@
+{{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
-{{ im ./media/games/light.png }}
-{{ li ./games/light.html { 2020 Light } }} - Alone on a lighthouse. {{ br }}
-
-{{ im ./media/games/river_trash.png }}
-{{ li ./games/river_trash.html { 2020 River Trash } }} - You are trash. Float!{{ br }}
-
-{{ im ./media/games/queen_returns.png }}
-{{ li ./games/the_queen_returns.html { 2020 The Queen Returns } }} - Writing letters to an absentee queen.{{ br }}
-
-{{ im ./media/games/adventurer.png }}
-{{ li ./games/the_adventurer.html { 2019 The Adventurer } }} - A solo journal writing RPG. {{ br }}
-
-{{ im ./media/games/treecrets.jpeg }}
-{{ li ./games/treecrets.html { 2019 Treecrets } }} - Discover the secrets of trees with a friend.{{ br }}
-
+{{ li ./games/light.html { 2020 Light } }} {{ br }}
+Alone on a lighthouse. {{ br }}
+{{ br }}
+{{ li ./games/river_trash.html { 2020 River Trash } }}{{ br }}
+You are trash. Float!{{ br }}
+{{ br }}
+{{ li ./games/the_queen_returns.html { 2020 The Queen Returns } }}{{ br }}
+Writing letters to an absentee queen.{{ br }}
+{{ br }}
+{{ li ./games/the_adventurer.html { 2019 The Adventurer } }}{{ br }}
+A solo journal writing RPG. {{ br }}
+{{ br }}
+{{ li ./games/treecrets.html { 2019 Treecrets } }}{{ br }}
+Discover the secrets of trees with a friend.{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
 
