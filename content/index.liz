@@ -2,19 +2,26 @@
 
 {{ im ./media/about.jpeg }} {{ br }}
 
-{{ h2  Scenes }}
-
-Currently working on a tool called Scenes for creating images with text in the linux console. The colour pallet is limited to B&W. These images are intended to then be used in an interactive narative game played in the terminal.
-
 {{ h2 Learning toki pona }}
-
 I have been inspired by others to try my hand at learning toki pona; a constructed language by Sonja Lang. My notes on the language can be found in the wiki. I am trying to read and complete a couple of lessons in the official book every day if i can.
 
 {{ h2 The Adventurer: paths crossed }}
 A two player variant of The Adventurer; a narative tabletop game.
 
 {{ h2 Website rework }}
-Trying to reorganise and optimise this website to keep bandwith as low as possible.
+Trying to reorganise and optimise this website to keep bandwith low.
 
-{{ The river }} 
-My static website generator {{ li ./software/the_river.html { The River } }} is getting an overhaul to make the output more organised and to also provide facility to build a text only version of the site.
+{{ h2 gmni }}
+Started work on a small gemini browser in C as an experimennt.
+
+{{ h2 gemini }}
+Created a gemini site and started populating it with content. (( li gemini://gemini.circuumlunar.space/~jameschip { James Chip on gemini } ))
+
+{{ h2 Started migrating from github }}
+I have started to migrate my projects away from github to sr.ht.
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
