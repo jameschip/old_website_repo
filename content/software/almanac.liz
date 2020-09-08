@@ -2,7 +2,7 @@
 
 {{ h1 Almanac.}}
 
-{{ li https://github.com/jameschip/Almanac { Almanac on github } }} {{ br }} 
+{{ li https://git.sr.ht/~jameschip/almanac { Almanac on Sourcehut } }} {{ br }} 
 {{ br }}
 
 A short form journaling program written in a single shell script for your local machine only. 

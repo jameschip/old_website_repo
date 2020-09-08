@@ -1,0 +1,45 @@
+{{ im ./media/software/scenees.png }}
+{{ h1 Scenes }}
+
+{{ li https://git.sr.ht/~jameschip/scenes { Scenes on Sourcehut } }}{{ br }}
+{{ br }}
+Scenes is a small graphics and text layout tool for the linux terminal. The only export option is the plain text save file that contains all of the data nessesary for the application to load the image again. If you wish to export as an image file then you should take a screen shot.
+
+{{ h2 Use }}
+
+Start scenes by invoking the command with a file name. {{ br }}
+{{ cb 
+	scenes file_name
+}}
+If the file exists then the image will be opened ready for editing, if the file doesnot exist then it will be created when you save. Scenes has two modes which can be chaged between by pressing the tab key, these are {{ bo text }} and {{ bo  draw }}. {{ br }}
+{{ br }}
+The following commands are available in both modes:{{ br }}
+{{ br }}
+{{ bo ctrl+s }} ~ Save file. {{ br }}
+{{ bo ctrl+q }} ~ Quit.
+
+{{ h2 Draw mode }}
+
+Draw mode is used for creating pictures. You move the cursor using the arrow keys and use the numbers 1 - 8 to iinsert a colour at that location. There is also a bucket fill tool.
+{{ br }}{{ br }} 
+{{ bo 1 - 9 }}  ~ Add colour at location of cursor {{ br }}
+{{ bo qwerty }} ~ Bucket fill at location of cursor{{ br }}
+
+{{ h2 Text mode }}
+
+Text mode is for overlaying text onto an image. Simply move your cursor, using the arrow keys, to where you want it and type the text in. There is no formal support for new lines and tabs; text is just places on the screen where  you  want it.
+
+{{ h2 Save format }}
+The save format is a plane text file, it has the following format.
+{{ cb 
+4,4		<- The xy sizze of the image saves, your terminal sshoould be this size when you open it
+1234	<- The colours of the background that were placed ( 1- 8 )
+5678
+1234
+5678
+text	<- The text on a grid, blank space filled with [SPACE] characters.
+text
+text
+text
+}}
+

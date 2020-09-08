@@ -2,7 +2,7 @@
 
 {{ h1 The Lizard }}
 
-{{ li https://github.com/jameschip/Lizard { The Lizard on Github } }} {{ br }}
+{{ li https://git.sr.ht/~jameschip/lizard { The Lizard on Sourcehut } }} {{ br }}
 {{ br }}
 
 The Lizard is a simple syntax for creating content for web pages. Unlike markdown Lizard uses a single unified syntax for 

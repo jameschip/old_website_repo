@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/">
-    <base href="file:///home/james/Documents/projects/jameschip.github.io/">
+    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
@@ -51,28 +51,50 @@
                     <a href="./wiki/wiki.html">Wiki</a>
                 </div>
                 
-<img src="./media/software/minitools.png"></img>
-<h1>Mini Tools </h1>
-<a href="https://github.com/jameschip/mini_tools">( Mini Tools on github ) </a> <br> <br>
+<img src="./media/software/scenees.png"></img>
+<h1>Scenes </h1>
 
-Mini tools are a practice in making the smallest possible useful tools to do text and drawing.
+<a href="https://git.sr.ht/~jameschip/scenes">{ Scenes on Sourcehut } </a><br>
+<br>
+Scenes is a small graphics and text layout tool for the linux terminal. The only export option is the plain text save file that contains all of the data nessesary for the application to load the image again. If you wish to export as an image file then you should take a screen shot.
 
-<h2>Grid Text. </h2>
+<h2>Use </h2>
 
-This lets you move around the terminal usiing your arrow keys and tap the text in where you need it.
-It is good for tasks such as laying out poetry. <br> <br>
+Start scenes by invoking the command with a file name. <br>
+<pre><code>scenes file_name
+</code></pre>
+If the file exists then the image will be opened ready for editing, if the file doesnot exist then it will be created when you save. Scenes has two modes which can be chaged between by pressing the tab key, these are <b>text </b> and <b>draw </b>. <br>
+<br>
+The following commands are available in both modes:<br>
+<br>
+<b>ctrl+s </b> ~ Save file. <br>
+<b>ctrl+q </b> ~ Quit.
 
-<b>F1 </b> - Exit.<br>
-<b>F2 </b> - Save (Does nothing if you have no file open).
+<h2>Draw mode </h2>
 
-<h2>Grid Draw </h2>
+Draw mode is used for creating pictures. You move the cursor using the arrow keys and use the numbers 1 - 8 to iinsert a colour at that location. There is also a bucket fill tool.
+<br><br> 
+<b>1 - 9 </b>  ~ Add colour at location of cursor <br>
+<b>qwerty </b> ~ Bucket fill at location of cursor<br>
 
-Nove around with the arrow keys and use 1 - 8 to put a colour where the cursor is. If you wish to keep an image the take a screen shot.<br><br>
+<h2>Text mode </h2>
 
-<b>F1 </b> - Exit. <br>
-<b>l </b> - Line mode. <br>
-<b>c </b> - Clear. <br>
-<b>q </b> - Quit. <br>
+Text mode is for overlaying text onto an image. Simply move your cursor, using the arrow keys, to where you want it and type the text in. There is no formal support for new lines and tabs; text is just places on the screen where  you  want it.
+
+<h2>Save format </h2>
+The save format is a plane text file, it has the following format.
+<pre><code>4,4		<- The xy sizze of the image saves, your terminal sshoould be this size when you open it
+1234	<- The colours of the background that were placed ( 1- 8 )
+5678
+1234
+5678
+text	<- The text on a grid, blank space filled with [SPACE] characters.
+text
+text
+text
+</code></pre>
+
+
 
                 <div class="footer"> 
                     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 

@@ -1,7 +1,7 @@
 {{ im ./media/software/tiffy.png }}
 {{ h1 The Tiffy }}
 
-{{ li https://github.com/jameschip/Tiffy { The Tiffy on Github } }} {{ br }}
+{{ li https://git.sr.ht/~jameschip/tiffy { The Tiffy on Sourcehut } }} {{ br }}
 {{ br }} 
 Tiffy is a simple minimalist static website generator that creates the flow of information on the river. Tiffy uses a single html layout file and a single css file to create pages filled with content from the Lizard files you create.
 

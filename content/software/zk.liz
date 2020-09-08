@@ -1,6 +1,6 @@
 {{ im ./media/software/zk_logo.png }}
 {{ h1 ZK }}
-{{ li https://github.com/jameschip/Zettelkasten ( Zk on github ) }} {{ br }} {{ br }}
+{{ li https://git.sr.ht/~jameschip/zettelkasten ( Zk on sourcehut ) }} {{ br }} {{ br }}
 
 This is an implementation of a zettelkasten (German, slip box) journaling method for Linux. The basic idea of a Zettelkasten is that short ideas, or notes, are made on numbered sips of paper kept in boxes. These notes have the following properties in this implementation:
 
