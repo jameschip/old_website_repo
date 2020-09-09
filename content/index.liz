@@ -1,6 +1,6 @@
+{{ im ./media/about.jpeg }} {{ br }}
 {{ h1 Now.}}
 
-{{ im ./media/about.jpeg }} {{ br }}
 
 {{ h2 Learning toki pona }}
 I have been inspired by others to try my hand at learning toki pona; a constructed language by Sonja Lang. My notes on the language can be found in the wiki. I am trying to read and complete a couple of lessons in the official book every day if i can.
