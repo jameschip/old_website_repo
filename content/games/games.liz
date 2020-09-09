@@ -1,6 +1,9 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
+{{ li ./games/tinc.html { 2020 TINC } }}{{ br }}
+Theoretically infinite noughts and crosses{{ br }}
+{{ br }}
 {{ li ./games/light.html { 2020 Light } }} {{ br }}
 Alone on a lighthouse. {{ br }}
 {{ br }}

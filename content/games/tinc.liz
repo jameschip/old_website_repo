@@ -1,0 +1,73 @@
+{{ im ./media/games/tinc.png }}
+{{ h1 Theoretically Infinite Noughts and Crosses }}
+
+In the standard version on Noughts and Crosses if each player makes optimal moves every game will end in a draw. TINC differes from this in the way that if both players make optimal moves theoretically the game could carry on to be infinitely big and continue being played unntil the end of time.
+
+{{ h2 How to play }}
+
+A turn in a game of TINC has three phases.
+
+{{ bp Place up to two symbols on the grid.}}
+{{ bp Check for a win.}}
+{{ bp Expand the grid if needed. }}
+
+To win a player must create an unbroken line, orthagonal or diagonal, of more than one of their symbol from one side of the grid to the other. Playes go back and forth taking turns trying to win.
+
+{{ h2 Setup }}
+
+{{ bp Choose who will be noughts and who will be crosses.}}
+{{ bp Draw a single square cell in the centre of the paper, this is the grid. }}
+
+{{ h2 Place up to two symbols }}
+
+{{ bp During their turn a player places up to two of their symbol in an empty cell on the grid.}}
+{{ bp A symbol may only be placed in an empty cell.}}
+{{ bp The player must place at least one symbol on their turn.}}
+{{ bp If there is only one cell available then the player must place their symbol in that cell and may not place any more symbols this turn.}}
+{{ bp You may not place a symbol of the other players type. }}
+
+{{ h2 Check for a win }}
+
+After you have placed your symbols on the grid you then check to see if either player has won. If a player has won then the game ends here, do not proceed to the next phase.
+
+## Expand the grid
+
+If at the end of a turn no player has won and there is a symbol of either type touching the edge of the grid then the grid expands. Grow the grid by one cell in each direction.
+
+{{ h2  Play Example }}
+
+In this example an X is a cross that has been placed in a cell a O is a nought that has been places in a cell and a ~ is an empty cell.
+
+{{ h3 Turn one. }}
+
+On this turrn there is only one space available, the player must place their symbol here. 
+{{ cb
+>
+>	~	->		X
+>
+}}
+We can see at this point the player has not won so we check to grow the grid. As there is a symbol against the edge of the grid then we expand it one cell in each direction.
+{{ cb 
+>				~~~
+>	X	->		~X~
+>				~~~
+}}
+
+{{ h3  Turn two }}
+
+On their turn the next player may place up to two of their symbols on the grid.
+{{ cb
+>	~~~				~~~
+>	~X~		->		~XO
+>	~~~				~~O
+}}
+Again we check to see if either player has won. As they have not we grow the grid again!
+{{ cb 
+>					~~~~~
+>	~~~				~~~~~
+>	~XO		->		~~XO~		
+>	~~O		 		~~~O~
+>					~~~~~
+}}
+
+An the game continues as such.
