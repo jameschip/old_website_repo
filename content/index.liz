@@ -15,7 +15,7 @@ Trying to reorganise and optimise this website to keep bandwith low.
 Started work on a small gemini browser in C as an experimennt.
 
 {{ h2 gemini }}
-Created a gemini site and started populating it with content. (( li gemini://gemini.circuumlunar.space/~jameschip { James Chip on gemini } ))
+Created a gemini site and started populating it with content. {{ li gemini://gemini.circuumlunar.space/~jameschip { James Chip on gemini } }}
 
 {{ h2 Started migrating from github }}
 I have started to migrate my projects away from github to sr.ht.
