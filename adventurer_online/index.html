@@ -75,6 +75,7 @@
 			font-family: Arial,Helvetica, sans-serif;
 			font-size: 2em;
 			width: inherit;
+			white-space: pre-line;
 		}
 
 		
@@ -109,7 +110,7 @@
 			d_index = 0
 
 			document.getElementById("card").textContent = " "
-			
+	
 			document.getElementById("pull_heart").addEventListener("click", draw_h)
 			document.getElementById("pull_diamond").addEventListener("click", draw_d)
 			document.getElementById("pull_club").addEventListener("click", draw_c)
@@ -122,9 +123,9 @@
 			if ( h_index >= hearts.length ) {
 				h_index = 0;
 				shuffle( hearts )
-			}
-			document.getElementById("card").textContent = hearts[ h_index++ ] + " OF HEARTS."
-			
+			}	
+			document.getElementById("card").textContent = hearts[ h_index ] + " OF HEARTS.\r\n" + h_content( hearts[ h_index ] )
+			h_index++;
 		}
 
 		function draw_d() {
@@ -132,7 +133,8 @@
 				d_index = 0;
 				shuffle( diamonds )
 			}
-			document.getElementById("card").textContent = diamonds[ d_index++ ] + " OF DIAMONDS."
+			document.getElementById("card").textContent = diamonds[ d_index ] + " OF DIAMONDS.\r\n" + d_content( diamonds[ d_index ] )
+			d_index++
 		}
 
 		function draw_c() {
@@ -140,8 +142,8 @@
 				c_index = 0;
 				shuffle( clubs )
 			}
-			document.getElementById("card").textContent = clubs[ c_index++ ] + " OF CLUBS."
-			
+			document.getElementById("card").textContent = clubs[ c_index ] + " OF CLUBS.\r\n" + c_content( clubs[ c_index ] )
+			c_index++
 		}
 
 		function draw_s() {
@@ -149,8 +151,8 @@
 				s_index = 0;
 				shuffle( spadess )
 			}
-			document.getElementById("card").textContent = spades[ s_index++ ] + " OF SPADES."
-			
+			document.getElementById("card").textContent = spades[ s_index ] + " OF SPADES\r\n" + s_content( spades[ s_index ] )
+			s_index++;
 		}
 
 
@@ -171,7 +173,135 @@
 		  }
 		
 		  return array;
-		}	
+		}
+
+		function s_content( card ) {
+			console.log(card); 
+			switch ( card ) {
+				case "ACE":
+					return "Island";
+				case "2":
+					return "Ancient ruin";
+				case "3":
+					return "Town or Village";
+				case "4":
+					return "Wood or Forrest";
+				case "5":
+					return "Castle";
+				case "6":
+					return "Safe House";
+				case "7":
+					return "Place of worship";
+				case "8":
+					return "Battlefield";
+				case "9":
+					return "Barren landscape";
+				case "10":
+					return "Gardens";
+				case "JACK":
+					return "Coastline";
+				case "QUEEN":
+					return "City";
+				case "KING":
+					return "Palace";			
+				}
+		}
+
+		function c_content( card ) {
+			console.log(card); 
+			switch ( card ) {
+				case "ACE":
+					return "A new species";
+				case "2":
+					return "A new / old foe";
+				case "3":
+					return "A wandering spirit";
+				case "4":
+					return "A lone traveller";
+				case "5":
+					return "A tyrant king";
+				case "6":
+					return "A scholar";
+				case "7":
+					return "An ancient evil";
+				case "8":
+					return "An unknown presence";
+				case "9":
+					return "A beast";
+				case "10":
+					return "The plants";
+				case "JACK":
+					return "A playful creature";
+				case "QUEEN":
+					return "A new/ old love";
+				case "KING":
+					return "A bandit leader";			
+				}
+		}
+
+		function h_content( card ) {
+			console.log(card); 
+			switch ( card ) {
+				case "ACE":
+					return "A sign";
+				case "2":
+					return "Natural disaster";
+				case "3":
+					return "Lost on way";
+				case "4":
+					return "Met an interesting stranger";
+				case "5":
+					return "Extreme weather";
+				case "6":
+					return "Cross dangerous terrain";
+				case "7":
+					return "Attacked at camp";
+				case "8":
+					return "Taken in by strangers";
+				case "9":
+					return "Saw Death";
+				case "10":
+					return "Wild animals";
+				case "JACK":
+					return "A vision";
+				case "QUEEN":
+					return "An illness";
+				case "KING":
+					return "Path blocked";			
+				}
+		}
+
+		function d_content( card ) {
+			console.log(card); 
+			switch ( card ) {
+				case "ACE":
+					return "The remains of a past visitor";
+				case "2":
+					return "Ancient artefact";
+				case "3":
+					return "Unknown object";
+				case "4":
+					return "A book";
+				case "5":
+					return "A curse or spell";
+				case "6":
+					return "A lost treasure";
+				case "7":
+					return "A trinket";
+				case "8":
+					return "A mechanical contraption";
+				case "9":
+					return "A map";
+				case "10":
+					return "A small box";
+				case "JACK":
+					return "A weapon";
+				case "QUEEN":
+					return "A toy";
+				case "KING":
+					return "A new food";			
+				}
+		}
 	</script>
 </head>
 
@@ -188,7 +318,7 @@
 	<br>
 	<div class="container">
 		<div class="cardStyle" id="card"></div>
-		
+				
 		<div class="hContainer">
 			<div class="vContainer">
 				<button id="pull_spade"><img src="spade.png" /></button>
@@ -200,11 +330,11 @@
 			</div>
 			<div class="vContainer">
 				<button id="pull_diamond"><img src="diamond.png" /></button>
-				<div class="sText">Beings</div>
+				<div class="sText">Things</div>
 			</div>
 			<div class="vContainer">
 				<button id="pull_club"><img src="club.png" /></button>
-				<div class="sText">Things</div>
+				<div class="sText">Beings</div>
 			</div>
 		</div>
 		
