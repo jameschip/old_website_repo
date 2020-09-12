@@ -22,8 +22,8 @@ Check out this videa by {{ li https://www.youtube.com/channel/UCKP_HHIH11gAiKBOq
 
 {{ h1 Online card picker! }}
 {{ im ./media/games/adventurer_table.png }}
+{{ li ./adventurer_online/index.html { Play The Adventurer Online!} }} {{ br }} {{ br }}
 There is now an online card picker that makes it easy to play {{ bo The Adventurer }} at your computer when you dont have any cards! {{ br }}
-{{ li ./adventurer_online/index.html { Play The Adventurer Online!} }}
 
 {{ br }}
 {{ br }}
