@@ -2,7 +2,7 @@
 {{ im ./media/software/software.png }}
 {{ h1 Software. }}
 
-{{ li ./software/scenes.html ( 2020 Scenes ) }} {{ br }} 
+{{ li ./software/scenes.html { 2020 Scenes } }} {{ br }} 
 A small graphics and text layout tool for the linux terminal. {{ br }}
 {{ br }}
 {{ li ./software/zk.html { 2020 ZK } }}{{ br }}
