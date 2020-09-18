@@ -6,6 +6,12 @@ This is a place where I keep a list of all of the books I have read or am curren
 I started keeping this list as a way to encourage myself to read more but also to keep track of what
 I have and have not read.
 
+{{ h2 Want to read }}
+{{ it Howel's Moving Castle }}- Dianne Wynne Jones {{ br }}
+{{ it Charmed Life }} - Dianne Wynne Jones {{ br }}
+{{ it Flow: The Psychology of Optimal Experience }} - Mihaly Csikszentmihalyi {{ br }}
+{{ it Rusty Brown }} - Chris Ware {{ br }}
+
 {{ h2 currently reading }}
 {{ it Going Postal }} - Terry Pratchet {{ br }}
 {{ it The Art of UNIX Programming }} - Eric. S. Raymond{{ br }}
