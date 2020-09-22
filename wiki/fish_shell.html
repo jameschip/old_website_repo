@@ -128,6 +128,13 @@ echo $ch
 end
 </code></pre>
 
+<h2>Grow a list of values. </h2>
+
+<pre><code># Set the list to itself + the new value
+# If list does no exist it is created!
+set -l list $list "$value_to_add"
+</code></pre>
+
 <br>
 <br>
 <br>

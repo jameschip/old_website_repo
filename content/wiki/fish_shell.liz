@@ -84,6 +84,14 @@ echo $ch
 end
 }}
 
+{{ h2 Grow a list of values. }}
+
+{{ cb 
+# Set the list to itself + the new value
+# If list does no exist it is created!
+set -l list $list "$value_to_add"
+}}
+
 {{ br }}
 {{ br }}
 {{ br }}
