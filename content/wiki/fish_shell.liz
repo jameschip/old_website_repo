@@ -8,12 +8,16 @@ setup runs and then throws you into fish.{{ br }}
 
 {{ cb exec fish }}
 
-Or to omake fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells {{ br }}
+Or to make fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells {{ br }}
 
 {{ cb  echo /usr/local/bin/fish | sudo tee -a /etc/shells }}
 
 Change your default shell to fish {{ br }}
 {{ cb  chsh -s /usr/local/bin/fish }}
+
+{{ h2 Defining functions }}
+
+Create a file in {{ bo ~/.config/fish/functions }} named {{ bo function_name.fish }}. In this file create a function of the same name as the file. You will then be able to call this function from the prompt by typing its name.
 
 {{ h2 Change default prompt }}
 
@@ -36,6 +40,57 @@ For a blank message just use an empty function. {{ br }}
 function fish_greeting
 end
 }}
+{{ br }}
+
+{{ h1 Programming in fish! }}
+
+Its all about writing scrits isn't it? Writing fish scriptsis pretty easy, here are a few snippets I have gleaned while doing so.
+
+{{ h2 Arrays start at 1 }}
+
+Yes the first index of an array is 1. You can get the last index of an array with -1. Indexing at -2 will give you the item before the last one, and so on.{{ br }}
+You can index ranges of an array like this:{{ br }}
+
+{{ cb 
+array[1]		# first
+array[-1]		# last
+array[5..-1]	# from the 5th element to the last
+array[-1..1]	# reverse
+}}
+
+{{ h2 Read file line by line }}
+{{ cb 
+while read -la line 
+	echo $line
+end < file_name.txt
+
+}}
+
+{{ h2 Switch checking string matches }}
+You can use the wild card in switches on a string!{{ br }}
+{{ cb 
+switch $var
+	case "abc*" 	# var begins with abc
+	case "*abc" 	# var ends with abc
+	case "*abc*"	# var has abc in the middle
+end
+}}
+
+{{ h2 Loop over a string }}
+{{ cb 
+set -l chars (string split '' $var )
+for ch in $chars
+echo $ch
+end
+}}
+
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
 {{ br }}
 
 
