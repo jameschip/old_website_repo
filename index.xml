@@ -7,6 +7,16 @@
 <link>https://www.jameschip.io</link>
 <description>The projects and ramblings of James Chip</description>
   <item>
+    <title>A Wood Heart</title>
+    <link>https://www.jameschip.io/games/wood_heart.html</light>
+    <description>A game about forest spirits and humans.</description>
+  </item>
+  <item>
+    <title>Scenes</title>
+    <link>https://www.jameschip.io/software/scenes.html</light>
+    <description>A terminal based drawing thing.</description>
+  </item>
+  <item>
     <title>ZK</title>
     <link>https://www.jameschip.io/software/zk.html</light>
     <description>A small implementation of a zettelkasten</description>
