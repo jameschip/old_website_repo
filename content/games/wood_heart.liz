@@ -1,0 +1,19 @@
+{{ im ./media/games/wood_heart.png }}
+Title Image by {{ li https://georgiebats.itch.io { Georgie Bats } }}
+{{ h1 A Wood Heart }}
+
+{{ li https://indie-zine.itch.io/indie-zine-september-2020 { September 2020 in*die Zine  on Itch } }}{{ br }}
+{{ br }}
+A wood heart is a game I produces for the September 2020 issue of {{ li  https://indie-zine.itch.io { in*die Zine } }}. It is about a group of forest spirits living in a forest where humans have just begun to settle by.
+It is a map drawing and story telling game that uses a deck of tarot cards and a die as an oracle to allow the players to tell the stories of the forest spirits.
+It is a quiet comment on human activity and the climate emergency that threatens us all.{{ br }}
+{{ br }}
+The september issue also comes with 9 other games by other creators, a load of other articles and some music so it is well worth picking up a copy.
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}
+{{ br }}

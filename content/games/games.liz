@@ -1,6 +1,9 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
 
+{{ li ./games/wood_heart.html { 2020 A Wood Heart } }}{{ br }}
+A game about forest spirits interacting with humans. Appears in in*die zine September 2020.{{ br }}
+{{ br }}
 {{ li ./games/tinc.html { 2020 TINC } }}{{ br }}
 Theoretically infinite noughts and crosses{{ br }}
 {{ br }}
