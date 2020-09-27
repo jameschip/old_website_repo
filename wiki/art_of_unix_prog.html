@@ -48,67 +48,51 @@
                     <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
                 </div>
                 
+<h1>The Are ot UNIX Programming Notes</h1>
 
-<img src="./media/wiki/books.jpg"></img>
-<h1>Reading Lists </h1>
+<h2>Philosophy of UNIX </h2>
 
-This is a place where I keep a list of all of the books I have read or am currently reading.
-I started keeping this list as a way to encourage myself to read more but also to keep track of what
-I have and have not read.
+Write programs that do one thing and do them well.<br>
+Write programs to talk to eachother. <br>
+Write programs to handle text streams, because that is a universal interface. <br>
 
-<h2>Want to read </h2>
-<i>Howel's Moving Castle </i>- Dianne Wynne Jones <br>
-<i>Charmed Life </i> - Dianne Wynne Jones <br>
-<i>Rusty Brown </i> - Chris Ware <br>
-<i>When Marnie Was There </i> - Joan G Robinson<br>
+<h3>Eric Raymonds 17 rules </h3>
+Build modular programs <br>
+Write readable programs. <br>
+Use Composition.<br>
+Separate mechanism from policy. <br>
+Write simple programs.<br>
+Write small programs.<br>
+Write transparent programs.<br>
+Write robust programs. <br>
+Make data complicated when required, not the program.<br>
+Build on users potention knowledge. <br>
+Avoid unnecessary output.<br>
+Fail in a way that is easy to diagnose.<br>
+Value developer over machine time.<br>
+Write abstact programs that generate code. <br>
+Prototype before polish. <br>
+Write flexible and open programs.<br>
+Make programs and protocols extensible.<br>
 
-<h2>currently reading </h2>
-<i>Flow: The Psychology of Optimal Experience </i> - Mihaly Csikszentmihalyi <br>
-<i>The Art of UNIX Programming </i> - Eric. S. Raymond<br>
-<i>Botany for Gardeners </i> - Mitchell Beazley
+<h2>Compactness and Orthagonailty </h2>
 
-<h2>2020 reading </h2>
-<i>Going Postal </i> - Terry Pratchet <br>
-<i>toki pona: The Language of Good </i> - Sonja Lang <br>
-<i>Why I’m No Longer Talking to White People About Race </i> - Reni Eddo-Lodge <br>
-<i>Three Men On A Boat </i> - Jerome K Jerome <br>
-<i>Antifa: The Antifascist Handbook </i> - Mark Bray <br>
-<i>Summer Book </i> - Tove Jansson <br>
-<i>Seashaken Houses: A Lighthouse History from Eddystone to Fastnet </i> - Tom Nancollas <br>
-<i>Stargazing: Memoirs of a Young Lighthouse Keeper</i> - Peter Hill <br>
-<i>How To Do Nothing </i> - Jenny Odell <br>
-<i>Abolish Silicon Valley </i> - Wendy Liu <br>
-<i>The Card </i> - Arnold Bennett <br>
-<i>20,000 Leagues under the sea </i> - Jules Verne <br>
+<h3>Compactness </h3>
+How easily the whole spec can fit in a developers head.<br>
+<br>
+C library is not compact, you cant hold the whole thing in your head. Only the important parts are memorised.<br>
+<br>
+Gemini protocol is compace. you can remember the way the whole spec works after only reading the document maybe one or two times.
 
-<h2>2019 reading </h2>
-
-<i>Soul Music </i> - Terry Pratchet <br>
-<i>The Subtle Art of Not Giving A F*ck </i> - Mark Manson <br>
-<i>No One Is Too Small to Make a Difference </i> - Greta Thunberg <br>
-<i>Finite and Infinite Games </i> - James P. Carse <br>
-<i>Why I am not a Christian </i> - Bertrand Russel <br>
-<i>The Memoirs of Moominpapa </i> - Tove Jansson <br>
-<i>Killing and Dying </i> - Adrian Tomine <br>
-<i>QED </i> - Richard Feynman <br>
-<i>Sabrina </i> - Nick Drnaso 
-
-<h2>2018 reading </h2>
-
-<i>Jonathan Strange and Mr Norrell </i> - Susanna Clarke <br>
-<i>Ciaphas Cain: Hero of the Imperium </i> - Sandy Mitchell <br>
-<i>Snuff </i> - Terry Pratchet <br>
-
-<h2>Permanent bookshelf </h2>
-
-<i>Maus </i> - Art Spiegelman <br>
-<i>Of Mice and Men </i> - John Steinbeck <br>
-<i>The Woman in Black </i> - Susan Hill <br>
-<i>The Machine Stops </i> - E M Foster <br>
-<i>Colleced Ghost Stories </i> - M R James <br>
-<i>The First Men in the Moon </i> - H G Wells <br>
-<i>Persepolis </i> - Marjane Satrapi <br>
-<i>Jimmy Corrigan: The Smartest Kid on Earth </i> - Chris Ware <br> <br>
+<h3>Orthagonality </h3>
+<blockquote>Do one thing well </blockquote>
+Orthgonality is designing parts to not have unintended side effects.<br>
+<br>
+If changing something causes an unrelated part of tthe program tochange behaviour then this is bad design.<br>
+<br>
+If an operation does one thing but can be repurposed to do something else without chaging the complexity then this is nobad thing. Think of a screwdriver, it was never intended to open a paint tin but doing so will not change the normal operation of the tool itself.<br>
+<h3>SPOT (single point of truth) </h3>
+Do not reproduce data in your program in multiple paces.If you need data in more than one place find a mechanism to import that data where needed. If you cant do that write code to share the data. If you cant do that, you have a fundamental design error and need to refactor.<br>
 
 
                 <div class="footer"> 

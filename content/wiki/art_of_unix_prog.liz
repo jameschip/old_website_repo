@@ -1,0 +1,45 @@
+{{ h1 The Are ot UNIX Programming Notes}}
+
+{{ h2 Philosophy of UNIX }}
+
+Write programs that do one thing and do them well.{{ br }}
+Write programs to talk to eachother. {{ br }}
+Write programs to handle text streams, because that is a universal interface. {{ br }}
+
+{{ h3 Eric Raymonds 17 rules }}
+Build modular programs {{ br }}
+Write readable programs. {{ br }}
+Use Composition.{{ br }}
+Separate mechanism from policy. {{ br }}
+Write simple programs.{{ br }}
+Write small programs.{{ br }}
+Write transparent programs.{{ br }}
+Write robust programs. {{ br }}
+Make data complicated when required, not the program.{{ br }}
+Build on users potention knowledge. {{ br }}
+Avoid unnecessary output.{{ br }}
+Fail in a way that is easy to diagnose.{{ br }}
+Value developer over machine time.{{ br }}
+Write abstact programs that generate code. {{ br }}
+Prototype before polish. {{ br }}
+Write flexible and open programs.{{ br }}
+Make programs and protocols extensible.{{ br }}
+
+{{ h2 Compactness and Orthagonailty }}
+
+{{ h3 Compactness }}
+How easily the whole spec can fit in a developers head.{{ br }}
+{{ br }}
+C library is not compact, you cant hold the whole thing in your head. Only the important parts are memorised.{{ br }}
+{{ br }}
+Gemini protocol is compace. you can remember the way the whole spec works after only reading the document maybe one or two times.
+
+{{ h3 Orthagonality }}
+{{ bq Do one thing well }}
+Orthgonality is designing parts to not have unintended side effects.{{ br }}
+{{ br }}
+If changing something causes an unrelated part of tthe program tochange behaviour then this is bad design.{{ br }}
+{{ br }}
+If an operation does one thing but can be repurposed to do something else without chaging the complexity then this is nobad thing. Think of a screwdriver, it was never intended to open a paint tin but doing so will not change the normal operation of the tool itself.{{ br }}
+{{ h3 SPOT (single point of truth) }}
+Do not reproduce data in your program in multiple paces.If you need data in more than one place find a mechanism to import that data where needed. If you cant do that write code to share the data. If you cant do that, you have a fundamental design error and need to refactor.{{ br }}
