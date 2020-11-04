@@ -1,6 +1,8 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
-
+{{ li ./games/mfgj.html { 2020 Micro Fiction Games Jam } }}{{ br }}
+A jame jam about making games that fit in a single tweet.{{ br }}
+{{ br }}
 {{ li ./games/wood_heart.html { 2020 A Wood Heart } }}{{ br }}
 A game about forest spirits interacting with humans. Appears in in*die zine September 2020.{{ br }}
 {{ br }}

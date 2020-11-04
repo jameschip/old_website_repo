@@ -1,0 +1,31 @@
+{{ im ./media/games/mfgj.gif }}
+{{ h1 Micro Fiction Games Jam }}
+{{ li http://microfictiongames.neocities.org { Micro Fiction Games Website } }} {{ br }}
+{{ br }}
+The micro fiction games jam is a yearly event where people write games thatfit in a single tweet on a common theme.
+I started the jam in November 2020 as a fun way of exploring extreme limits on creativity. 
+It ran for two weeks and people were allowed to submit multiple games in that time.
+
+{{ h2 My entries in the jam }}
+{{ li https://microfictiongames.neocities.org/2020/how_animals_evolve.html { How animals evolve! } }}{{ br }}
+{{ li https://microfictiongames.neocities.org/2020/plant_a_garden.html { Plant a garden } }} {{ br }}
+{{ li https://microfictiongames.neocities.org/2020/tree_race.html { Tree race } }} {{ br }}
+
+{{ h2 The website }}
+
+The website for the game jam was made very minimalist for three reasons.
+
+{{ bp The small format of the games means that you can not put anything in the game that doesnt need to be there, the website matchhes this with aesthetic. }}
+{{ bp Too many websites consentrate on fancy presentation that often distracts from the content. The games were the focus here and there was no need to hide them with unessesary elements like rollover effects and images. }}
+{{ bp Small bandwidth useage. The games were small so it made sense that the games footprint on the internet should be as small as possible while still being aesthetic. What is the point of writing a game in 280 characters if the pages uses 1mb of bandwidth to download }}
+
+Things like Javascript, tracking and external fonts and API's were avoided as much as possible to to provide a clean and fast user experience. CSS was also kept to a minimum. These technologies are often used when they have no real need to be.
+While creating this website I continuously asked myself the question "Does this add to the content on the page in a useful way?". If the anser was that it bought nothing
+to the actual content being diisplayed then it had no need to exist, nor actually should it.
+
+{{ h2 The tools }}
+{{ li https://sr.ht/~jameschip/micro_fiction_game_jam/ { micro fiction games jam on sr.ht } }} {{br}}
+{{br}}
+To generate the website when people sent entries in I created a set of simple fish scripts. Running the scripts when in the websites root directory creates all of the pages the site needs from template files.
+
+
