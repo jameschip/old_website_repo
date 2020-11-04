@@ -1,4 +1,4 @@
-{{ im ./media/games/mfgj.gif }}
+{{ im ./media/games/mfgj.png }}
 {{ h1 Micro Fiction Games Jam }}
 {{ li http://microfictiongames.neocities.org { Micro Fiction Games Website } }} {{ br }}
 {{ br }}
