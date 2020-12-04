@@ -1,5 +1,8 @@
 {{ im ./media/games/games.jpg }}
 {{ h1 Games. }}
+{{ li ./games/vusi.html { 2020 Very Useful Spells Indeed! } }}{{ br }}
+A micro zine with very useful spells in it.{{ br }}
+{{ br }}
 {{ li ./games/mfgj.html { 2020 Micro Fiction Games Jam } }}{{ br }}
 A jame jam about making games that fit in a single tweet.{{ br }}
 {{ br }}
