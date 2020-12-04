@@ -1,0 +1,12 @@
+{{ h1 Latex notes}}
+
+{{ h2 Setup Manjaro }}
+Install latex tools with:{{ cb sudo pacman -S livetex-most }}
+To create a pdf out of a .tex file run {{ cb latexpdf latex_file.tex }}
+
+{{ h2 Notes }} 
+
+{{ li https://www.latex-tutorial.com/tutorials/ { Handy LaTex Tutorials } }} {{ br }}
+{{ br }}
+
+
