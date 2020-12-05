@@ -7,23 +7,23 @@ Write programs to talk to eachother. {{ br }}
 Write programs to handle text streams, because that is a universal interface. {{ br }}
 
 {{ h3 Eric Raymonds 17 rules }}
-Build modular programs {{ br }}
-Write readable programs. {{ br }}
-Use Composition.{{ br }}
-Separate mechanism from policy. {{ br }}
-Write simple programs.{{ br }}
-Write small programs.{{ br }}
-Write transparent programs.{{ br }}
-Write robust programs. {{ br }}
-Make data complicated when required, not the program.{{ br }}
-Build on users potention knowledge. {{ br }}
-Avoid unnecessary output.{{ br }}
-Fail in a way that is easy to diagnose.{{ br }}
-Value developer over machine time.{{ br }}
-Write abstact programs that generate code. {{ br }}
-Prototype before polish. {{ br }}
-Write flexible and open programs.{{ br }}
-Make programs and protocols extensible.{{ br }}
+{{ bp Build modular programs. }}
+{{ bp Write readable programs. }}
+{{ bp Use Composition. }}
+{{ bp Separate mechanism from policy. }}
+{{ bp Write simple programs. }}
+{{ bp Write small programs. }}
+{{ bp Write transparent programs. }}
+{{ bp Write robust programs. }}
+{{ bp Make data complicated when required, not the program. }}
+{{ bp Build on users potention knowledge. }}
+{{ bp Avoid unnecessary output. }}
+{{ bp Fail in a way that is easy to diagnose.}}
+{{ bp Value developer over machine time. }}
+{{ bp Write abstact programs that generate code. }}
+{{ bp Prototype before polish. }}
+{{ bp Write flexible and open programs. }}
+{{ bp Make programs and protocols extensible. }}
 
 {{ h2 Compactness and Orthagonailty }}
 
@@ -43,3 +43,68 @@ If changing something causes an unrelated part of tthe program tochange behaviou
 If an operation does one thing but can be repurposed to do something else without chaging the complexity then this is nobad thing. Think of a screwdriver, it was never intended to open a paint tin but doing so will not change the normal operation of the tool itself.{{ br }}
 {{ h3 SPOT (single point of truth) }}
 Do not reproduce data in your program in multiple paces.If you need data in more than one place find a mechanism to import that data where needed. If you cant do that write code to share the data. If you cant do that, you have a fundamental design error and need to refactor.{{ br }}
+
+{{ h3 SPOT rule (Single Point Of Truth) }}
+
+Closely linked to orthagonal design. Duplication is a non orthagonal design pattern, If you need the dataa somewhere then find a way to oimport it indtead of copying it.
+If you can not import it then you should refactoror write a generator so that the data can be gotten at.
+
+{{ h2 Writing For Modularity }}
+
+{{ h3 How many globals? }}
+Reduce the number of globalls in  your code. Too many global variables make leaky codeeasy and harm modularity. Leaky code is code that leaks its functionality or state into the parts of a program and make a maintenance nightmare.
+
+{{ h3 Keep Modules theRight Size }}
+If your modules grow too big then they are doing to many things. Too small and they may be too generic. Keep a check on them!
+
+{{ h3 Function complexity ))
+If you can not describe what a function does in one line then it is doint too much!
+
+{{ API complexity }}
+Try to avoid internal API code.{{br}}
+{{br}}
+If  you can not easily describe your API to another person it is too complex. Avoid having too many entry points.
+
+{{ h2 Texturality }}
+
+{{ h3 Benefits of a text interface }}
+{{ bp Universal and easy to read and write by humans. }}
+{{ bp Encourage encapsulation by discouraging complez data structures as an interface. }}
+{{ bp Discourage promiscuity by hiding internal state. }}
+{{ bpNon rigid size of numeric values, a string can be as long as it wants but a byte can only hold so many values. s}}
+
+
+Storing data as plain text instead of binary makes code more portable as text is universal. It reduces ccomplexity of code too as text files are easy to handle.
+
+{{ h2 Top Down and Bottom Up }}
+
+
+Top down development starts with the UUI and drills down to the problem solving. Bottom up is the reverse of this. Glue code is the bit that holds the specific problem domain and the UI code together. Thin layers of glue are prefereable to okeepe complexity low!
+
+
+{{ h2 Transparency and Discoverability }}
+Software is transparent when  it has no hidden corners. You can easily build a mental model of it and use that model to predice behaviour. {{ br }}
+{{ br }}
+Software is discoverable when features help you build the correct mental model of it. Good documents users and good function and variiable naming helps developers. Care for both!
+{{ h2 writing for transparancy }}
+Don't layer too much on to of  what you ar emanipulating {{br}}
+{{br}}
+Ensure that debug output is available as an option and that it is obvious as to how you use it! Hiding debug makes debug harder believe it or not.
+
+{{ h2 Texturalisers! }}
+Where binary data storage is unavooidable create programs that convert them back and forth between the binary format and an easily readable text format. These tools make it easy for data to be read and debugged! {{br}}
+{{br}}
+Texturalisers improve transparency and discoverability. Transparency by making the data being worked on visible and discoverability by making possible data errors easy to find.
+
+{{ h3 Configuration }}
+
+When designing an interface ask yourself if an option can be removed an automated away. Ask yourself:
+{{ bp Can i leave this feature out? }}
+{{ bp Can the program be changed in an innocuous way to make this option unnecessary? }}
+{{ bp Is this feature purly coosmetic? }}
+{{ bp Should the behaviour this flag add be a different program instead? }}
+
+
+Avoid having too many on/ off switches in your interface, they increase code complexity and make for a lot of extra testing code that needs writing.
+
+
