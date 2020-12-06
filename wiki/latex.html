@@ -52,14 +52,72 @@
 
 <h2>Setup Manjaro </h2>
 Install latex tools with:<pre><code>sudo pacman -S livetex-most </code></pre>
-To create a pdf out of a .tex file run <pre><code>latexpdf latex_file.tex </code></pre>
+To create a pdf out of a .tex file run <pre><code>pdflatex latex_file.tex </code></pre>
 
 <h2>Notes </h2> 
 
 <a href="https://www.latex-tutorial.com/tutorials/">{ Handy LaTex Tutorials } </a> <br>
-<br>
+<a href="http://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf">{ Memoir class documentation } </a> <br>
 
+<h2>Commands </h2>
 
+Commands to the latex compiler are newlones that steat with the "\" character.
+<pre><code>\document{memoir}
+\begin{document}
+\end{document}
+</code></pre>
+
+<h2>Basic Document Structure </h2>
+
+A basic latexdocument has 2 main parts.
+<ul><li>Preamble </li>
+<li>Document </li></ul>
+
+<h3>Preamble </h3>
+The preamble is not rendered in your document and is mostly used for setting up the environment for when the compiler runs.
+
+<h3>Document </h3>
+The document part is the main bulk of what will be rendered in your dicument. It is mandatory and starts with a <i>\begin{document} </i> and ends with an <i>\end{document} </i> command.
+The <i>\begin{} </i> and <i>\end{} </i> commands define an environment in your document but the <i>document </i> environment is and should always be the topmost one you use.
+
+<h3>Example </h3>
+<pre><code>\documentclass{memoir}
+
+\title{A title}
+\date{} # No date will be printed if left blank
+\author{James Chip}
+
+\begin{document}
+  \pagenumbering{gobble}
+  \maketitle
+  \newpage
+  \pagenumbering{arabic}
+  Hello World!
+\end{document}
+</code></pre> 
+
+<h2>Text sections </h2>
+
+Sections, subsection and paragraphs are handled as follows:
+<pre><code>\section{Section Title}
+
+Text that goes in the section under the title.
+
+\subsection{A Subtitle}
+
+Text that goes in the subsection under the title.
+
+\subsubsection{A Sub-subtitle}
+
+Even more text to put in.
+
+\Paragraph{}
+
+Paragraph text. This will be indented while the others will not.
+
+</code></pre>
+
+Sections have a default numbering sccheme on them. If you wish to avoid numberiing on your sections then use <i>\section*{TITLE} </i> instead.
 
 
                 <div class="footer"> 
