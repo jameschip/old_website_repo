@@ -1,9 +1,7 @@
 
+{{ im ./media/audio/audio.jpg }}
 {{ h1 Audio.}}
 
-{{ im ./media/audio/big-chip.png }}
-{{ li ./audio/big-chip.html { Big-Chip } }} - Chiptunes {{ br }}
-{{ br }}
-{{ im ./media/audio/wineo.jpg }}
-{{ li ./audio/wine-o.html { Wine-o } }} - A skacore band {{ br }}
+{{ li ./media/audio/midines.tar.gz { NES samples } (14,6MB) }} {{ br }}
+A whole collection of samples recorded directly from MIDINES ages ago before I sold it.{{ br }}
 {{ br }}
