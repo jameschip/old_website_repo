@@ -71,3 +71,12 @@ Paragraph text. This will be indented while the others will not.
 }}
 
 Sections have a default numbering sccheme on them. If you wish to avoid numberiing on your sections then use {{ it \section*{TITLE} }} instead.
+
+{{ h2 Paragraph setup }}
+
+To set paragraph indent and spacing use the following:
+{{ cb
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2em}	
+}}
+
