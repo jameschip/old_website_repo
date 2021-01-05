@@ -6,4 +6,4 @@ This is a place where I will be keeping various things that I have been research
 {{ li ./wiki/linux.html { Linux notes } }} {{ br }}
 {{ li ./wiki/toki_pona.html { Toki Pona } }} {{ br }}
 {{ li ./wiki/art_of_unix_prog.html { notes from art of unix programming } }} {{ br }}
-{{ li ./wiki/year_review.html { yearly reviews } }} {{ br }}
+{{ li ./wiki/year_reviews.html { yearly reviews } }} {{ br }}
