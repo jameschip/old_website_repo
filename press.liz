@@ -1,0 +1,23 @@
+{{ h1 About James Chip }}
+
+James Chip is an independent tabletop game designer, creator of esoteric software and open source advocate. When not settled in front of a computer he can usually be found tending plants, talking to bees, painting badly and reading. He wants you all to go out, feed the birds and plant a tree.
+
+{{ h2 Branding Images }} 
+{{ li https://www.jameschip.io/media/press/jc_logo_big.png { James Chip Logo } }}{{ br }}
+{{ li https://www.jameschip.io/media/press/jc_logo_big_text.png { James Chip Logo with text } }}
+
+{{ h4 A Wood Heart Promo Images }}
+
+{{ li https://www.jameschip.io/media/press/wh_press.zip { A Wood Heart Press Images zip } }}{{br}}
+
+{{ im https://www.jameschip.io/media/press/wh_press/cover_image.png }}
+{{ im https://www.jameschip.io/media/press/wh_press/cover.png }}
+{{ im https://www.jameschip.io/media/press/wh_press/page_1.png }}
+{{ im https://www.jameschip.io/media/press/wh_press/zine_spread_1.jpg }}
+{{ im https://www.jameschip.io/media/press/wh_press/zine_spread_2.jpg }}
+
+{{ Contact }}
+
+email: info@jameschip.io
+
+
