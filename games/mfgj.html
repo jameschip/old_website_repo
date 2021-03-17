@@ -3,93 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/games/mfgj.png"></img>
-<h1>Micro Fiction Games Jam </h1>
-<a href="http://microfictiongames.neocities.org">{ Micro Fiction Games Website } </a> <br>
-<br>
-The micro fiction games jam is a yearly event where people write games thatfit in a single tweet on a common theme.
-I started the jam in November 2020 as a fun way of exploring extreme limits on creativity. 
-It ran for two weeks and people were allowed to submit multiple games in that time.
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h2>My entries in the jam </h2>
-<a href="https://microfictiongames.neocities.org/2020/how_animals_evolve.html">{ How animals evolve! } </a><br>
-<a href="https://microfictiongames.neocities.org/2020/plant_a_garden.html">{ Plant a garden } </a> <br>
-<a href="https://microfictiongames.neocities.org/2020/tree_race.html">{ Tree race } </a> <br>
+	<div class="content">
+		<img src="./media/games/mfgj.png "><p><a href="http://microfictiongames.neocities.org">{ Micro Fiction Games Website } </a></p><h1>Micro Fiction Games Jam </h1><p>The micro fiction games jam is a yearly event where people write games that fit in a single tweet on a common theme. I started the jam in November 2020 as a fun way of exploring extreme limits on creativity. It ran for two weeks and people were allowed to submit multiple games in that time.</p><h2>My entries in the jam </h2><p><a href="https://microfictiongames.neocities.org/2020/how_animals_evolve.html">{ How animals evolve! } </a><br><a href="https://microfictiongames.neocities.org/2020/plant_a_garden.html">{ Plant a garden } </a><br><a href="https://microfictiongames.neocities.org/2020/tree_race.html">{ Tree race } </a></p><h2>The website </h2><p>The website for the game jam was made very minimalist for three reasons.</p><ul><li>The small format of the games means that you can not put anything in the game that doesn't need to be there, the website matches this with aesthetic. </li><li>Too many websites concentrate on fancy presentation that often distracts from the content. The games were the focus here and there was no need to hide them with unnecessary elements like rollover effects and images. </li><li>Small bandwidth usage. The games were small so it made sense that the games footprint on the internet should be as small as possible while still being aesthetic. What is the point of writing a game in 280 characters if the pages uses 1MB of bandwidth to download </li></ul><p>Things like JavaScript, tracking and external fonts and API's were avoided as much as possible to to provide a clean and fast user experience. CSS was also kept to a minimum. These technologies are often used when they have no real need to be. While creating this website I continuously asked myself the question "Does this add to the content on the page in a useful way?". If the answer was that it bought nothing to the actual content being displayed then it had no need to exist, nor actually should it.</p><h2>The tools </h2><p><a href="https://sr.ht/~jameschip/micro_fiction_game_jam/">{ micro fiction games jam on sr.ht } </a></p><p>To generate the website when people sent entries in I created a set of simple fish scripts. Running the scripts when in the websites root directory creates all of the pages the site needs from template files.</p>
+	</div>
 
-<h2>The website </h2>
-
-The website for the game jam was made very minimalist for three reasons.
-
-<ul><li>The small format of the games means that you can not put anything in the game that doesnt need to be there, the website matchhes this with aesthetic. </li>
-<li>Too many websites consentrate on fancy presentation that often distracts from the content. The games were the focus here and there was no need to hide them with unessesary elements like rollover effects and images. </li>
-<li>Small bandwidth useage. The games were small so it made sense that the games footprint on the internet should be as small as possible while still being aesthetic. What is the point of writing a game in 280 characters if the pages uses 1mb of bandwidth to download </li></ul>
-
-Things like Javascript, tracking and external fonts and API's were avoided as much as possible to to provide a clean and fast user experience. CSS was also kept to a minimum. These technologies are often used when they have no real need to be.
-While creating this website I continuously asked myself the question "Does this add to the content on the page in a useful way?". If the anser was that it bought nothing
-to the actual content being diisplayed then it had no need to exist, nor actually should it.
-
-<h2>The tools </h2>
-<a href="https://sr.ht/~jameschip/micro_fiction_game_jam/">{ micro fiction games jam on sr.ht } </a> <br>
-<br>
-To generate the website when people sent entries in I created a set of simple fish scripts. Running the scripts when in the websites root directory creates all of the pages the site needs from template files.
-
-
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

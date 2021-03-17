@@ -3,139 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/almanac.jpg"></img>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h1>Almanac.</h1>
+	<div class="content">
+		<img src="./media/software/almanac.jpg "><p><a href="https://git.sr.ht/~jameschip/almanac">{ Almanac on Sourcehut } </a></p><h1>Almanac.</h1><p>A short form journaling program written in a single shell script for your local machine only. Almanac flies in the face of the trend to have data available to all your devices via the internet; a journal is often a deeply private and personal thing, why would you want to make that available online? </p><p>A journal is an item to be cherished and cared for, it must travel with you if you are to be able to use it. The interconnected age has destroyed some of the special relationship with the item of the journal by allowing you to make entries at any time from any medium. Almanac tries to restore some of this special relationship by insisting that if you are to fill it, it must travel with you. </p><img src="./media/software/almanac_screen.png "><p>Almanac stores all entries with a subject tag and a time stamp so that it is fully searchable. </p><h3>Add an entry to the almanac. </h3><pre>almanac -m "This is the message to log" </pre><p> </p><p>This will add an entry to the almanac with the default tag of 'personal' or what you have set the tag in the config file to</p><h3>Add an entry to the almanac with a different tag </h3><pre>almanac -s work -m "This is the message to log" </pre><p>This will add an entry to the almanac with the tag specified after the -s flag.</p><h3>Display the whole almanac </h3><pre>almanac -A </pre><p>This will display all of the entries in the almanac to the cli.</p><h3>Display all entries for tag </h3><pre>almanac -S work </pre><p>This will display any entries in the almanac for the given tag.</p><h3>Display entries by date </h3><p>The -D -Y and -M tags display entries from the given day, year or month respectively. They can be combined like so.</p><pre>almanac -D 01 -M 01 -Y 19 </pre><p>This will display all of the entries for the 1st of January 2019. These can also be combined with a tag search:</p><pre>almanac -S work -Y 19 </pre><p>Will display all of the entries in 2019 with the work tag. Note that all of the date searches require 2 digit inputs e.g. you will need to input 01 instead of just 1</p><h3>Display used tags </h3><pre>almanac -T </pre><h3>Display the number of posts for each tag </h3><pre>almanac -C </pre><h3>Display the last entry inserted into the almanac </h3><pre>almanac -l </pre><h3>Remove an entry from the almanac </h3><pre>almanac --remove-entry {the long number at the start of the entry goes here} </pre><p>Note that this has the ability to remove MANY entries from the almanac at once, it works by regex matching the number at the start of the entry. If you put 010119 then any entries with a number that starts 010119 will be permanently removed from the log. THIS CAN NOT BE UNDONE SO IF YOU REMOVE THINGS YOU WANT TO KEEP ITS ON YOU! This command will print out the entries that will be removed and ask you if you really want to proceed. you have to input y or Y to proceed otherwise the log stays untouched.</p>
+	</div>
 
-<a href="https://git.sr.ht/~jameschip/almanac">{ Almanac on Sourcehut } </a> <br> 
-<br>
-
-A short form journaling program written in a single shell script for your local machine only. 
-Almanac flies in the face of the trend to have data available to all your devices via the internet; 
-a journal is often a deeply private and personal thing, why would you want to make that available online?  
-<br> <br>
-A journal is an item to be cherished and cared for, it must travel with you if you are to be able to use it. 
-The interconnected age has destroyed some of the special relationship with the item of the journal by allowing 
-you to make entries at any time from any medium. Almanac tries to restore some of this special relationship by 
-insisting that if you are to fill it, it must travel with you. 
-
-<img src="./media/software/almanac_screen.png"></img>
-
-Almanac stores all entries with a subject tag and a time stamp so that it is fully searchable. 
-
-<h3>Add an entry to the almanac. </h3>
-
-<pre><code>almanac -m "This is the message to log" </code></pre> 
-
-This will add an entry to the almanac with the default tag of 'personal' or what you have set the tag in the config file to
-
-<h3>Add an entry to the almanac with a different tag </h3>
-
-<pre><code>almanac -s work -m "This is the message to log" </code></pre>
-
-This will add an entry to the almanac with the tag specified after the -s flag.
-
-<h3>Display the whole almanac </h3>
-
-<pre><code>almanac -A </code></pre>
-
-This will display all of the entries in the almanac to the cli.
-
-<h3>Display all entries for tag </h3>
-
-<pre><code>almanac -S work </code></pre>
-
-This will display any entries in the almanac for the given tag.
-
-<h3>Display entries by date </h3>
-
-The -D -Y and -M tags display entries from the given day, year or month respectivley. They can be combined like so.
-
-<pre><code>almanac -D 01 -M 01 -Y 19 </code></pre>
-
-This will display all of the entries for the 1st of January 2019. These can also be combined with a tag search:
-
-<pre><code>almanac -S work -Y 19 </code></pre>
-
-Will display all of the entries in 2019 with the work tag. Note that all of the date searches require 2 digit inputs
-e.g. you will need to input 01 instear of just 1
-
-<h3>Display used tags </h3>
-
-<pre><code>almanac -T </code></pre>
-
-<h3>Display the number of posts for each tag </h3>
-
-<pre><code>almanac -C </code></pre>
-
-<h3>Display the last entry inserted into the almanac </h3>
-
-<pre><code>almanac -l </code></pre>
-
-<h3>Remove an entry from the almanac </h3>
-
-<pre><code>almanac --remove-entry {the long number at the start of the entry goes here} </code></pre>
-
-Note that this has the ability to remove MANY entries from the almanac at once, it works by regex matching the number at the start of the entry. 
-If you put 010119 then any entries with a number that starts 010119 will be permenantly removed from the log. 
-THIS CAN NOT BE UNDONE SO IF YOU REMOVE THINGS YOU WANT TO KEEP ITS ON YOU! This command will print out the entries that will be removed and 
-ask you if you really want to proceed. you have to input y or Y to proceed otherwise the log stays untouched.
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

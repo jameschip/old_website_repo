@@ -3,106 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/lizard.png"></img>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h1>The Lizard </h1>
+	<div class="content">
+		<img src="./media/software/lizard.png "><p><a href="https://git.sr.ht/~jameschip/lizard">{ The Lizard on Sourcehut } </a></p><h1>The Lizard </h1><p>The Lizard is a simple syntax for creating content for web pages. Unlike markdown Lizard uses a single unified syntax for all tags making it easier to remember, tags can also not be nested which promotes a single unified style on sites.</p><h3>Headers </h3><p> </p><p>Headers from h1 to h6 in size </p><p>/{{ h1 title text }}</p><h3>Links </h3><p>/{{ li www.jameschip.io link text }}</p><h3>Images </h3><p>/{{ im image_location image rollover text }}</p><h3>Text style </h3><p>/{{ br }} just replaced with a line break.<br>/{{ bo bold text }}<br>/{{ it italic text }}<br>/{{ ul underlined text }} <br>/{{ bq this stuff is in a blockquote }}<br>/{{ cb this is text in a code block }} </p><h3>Lists </h3><p>this is text before the list.  <br>/{{ bp bullet point text 1 }}  <br>/{{ bp next list item }}<br>/{{ bp next list item }}<br>this is tex after the list </p>
+	</div>
 
-<a href="https://git.sr.ht/~jameschip/lizard">{ The Lizard on Sourcehut } </a> <br>
-<br>
-
-The Lizard is a simple syntax for creating content for web pages. Unlike markdown Lizard uses a single unified syntax for 
-all tags making it easier to remember, tags can also not be nested which promotes a single unified style on sites. <br>
-<br>
-<h3>Headers </h3> 
-
-Headers from h1 to h6 in size <br>
-
-<pre><code>{{ h1 title text }} </code></pre> 
-
-<h3>Links </h3>
-
-<pre><code>{{ li www.jameschip.io link text }} </code></pre>
-
-<h3>Images </h3>
-
-<pre><code>{{ im image_location image rollover text }} </code></pre> 
-
-
-<h3>Text style </h3>
-
-<code> <pre>
-{{ br }} just replaced with a liine break. <br>
-{{ bo bold text }} <br>
-{{ it italic text }} <br>
-{{ ul underlined text }} <br> 
-{{ bq this stuff is in a blockquote }} <br>
-{{ cb this is text in a code block }} 
-</pre></code>
-
-<h3>Lists </h3>
-<code><pre>
-this is text before the list. <br>  
-{{ bp bullet point text 1 }} <br>  
-{{ bp next list item }} <br>
-{{ bp next list item }} <br>
-this is tex after the list 
-</pre></code>
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

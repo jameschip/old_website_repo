@@ -3,100 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/autograph.png"></img>
-<h1>Autograph </h1>
-<a href="https://git.sr.ht/~jameschip/autograph">( Autograph on Sourcehut ) </a> <br> <br>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-Autograph is a minimal markdown editor with simple and entirely keyboard driven interface.
-It has 2working modes which can be toggled between by pressing meta+d.
+	<div class="content">
+		<img src="./media/software/autograph.png "><p><a href="https://git.sr.ht/~jameschip/autograph">( Autograph on Sourcehut ) </a></p><h1>Autograph </h1><p>Autograph is a minimal markdown editor with simple and entirely keyboard driven interface. It has 2 working modes which can be toggled between by pressing meta+d.</p><h2>Dual view mode. </h2><p>In dual view mode the file you are editing is displayed on the left of the interface and a preview of your files format is displayed on the right. The preview of your file is updated as you type so you can see your changes as  you go.</p><h2>Single view mode </h2><p>Sometimes while in the flow of writing the constantly updating preview can be distracting. In single view mode the preview is hidden and only the file you are editing is displayed. You can switch back and forth between the preview and edit view by using the tab key.</p><h2>Keyboard commands </h2><ul><li>meta+o -> Open. </li><li>meta+n -> New file. </li><li>meta+s -> Save. </li><li>meta+S -> Save as. </li><li>meta+> -> Cursor to next heading. </li><li>meta+< -> Cursor to previous heading. </li><li>meta+d -> Toggle dual display mode. </li><li>tab -> in single edit mode this key will change between edit or preview. </li></ul><img src="./media/software/autograph_screen.png "><h2>Libs used </h2><p>The following libraries were used in creating this project :<br><a href="https://github.com/hundredrabbits/Themes">Ecosystem Themes </a> by Hundred rabbits.<br><a href="https://github.com/jonschlinkert/remarkable">Remarkable markdown parser. </a></p>
+	</div>
 
-<h2>Dual view mode. </h2>
-
-In dual view mode the file you are editing is displayed on the left of the interface and a preview of your files format is displayed on the right.
-The preview of your file is updated as you type so you can see your changes as  you go.
-
-<h2>Single view mode </h2>
-
-Sometimes while in the flow of writing the constantly updating preview can be distracting. In single view mode the preview is hidden and only the file you are editing is displayed.
-You can switch back and forth between the preview and edit view by using the tab key.
-
-<h2>Keyboard commands </h2>
-
-   <ul><li>meta+o -> Open. </li>
-   <li>meta+n -> New file. </li>
-   <li>meta+s -> Save. </li> 
-   <li>meta+S -> Save as. </li>
-   <li>meta+> -> Cursor to next heading. </li>
-   <li>meta+< -> Cursor to previous heading. </li>
-   <li>meta+d -> Toggle dual display mode. </li> 
-   <li>tab -> in single edit mode this key will change between edit or preview. </li></ul>
-
-<img src="./media/software/autograph_screen.png"></img>
-
-<h2>Libs used </h2>
-
-The following libraries were used in creating this project.<br>
-
-<a href="https://github.com/hundredrabbits/Themes">Ecosystem Themes </a> by Hundred rabbits. <br>
-
-<a href="https://github.com/jonschlinkert/remarkable">Remarkable markdown parser. </a> <br>
-
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

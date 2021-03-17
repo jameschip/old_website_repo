@@ -3,110 +3,47 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<h1>GDB </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-GDB is a C debugger for the cli, it allows stepping through a program, setting breakpoints, watching variables and many other more complex things too.
-
-<h2>Compiling for GDB </h2>
-
-<pre><code>gcc -g program.c -o program </code></pre><br>
-
-Use the -g flag to keep the debug symbols in your output binary.
-
-<h2>Running GDB </h2>
-
-<pre><code>gdb ./program  </code></pre>
-
-<h1>Using! </h1>
-
-Once you launch gdb you will be presented with a basic prompt. Your program wont run untill you type <i>run </i> at the prompt.
-
-<h2>Getting a sensible view of your code </h2> 
-
-At the prompt type {{ cd layout src }} to get a view of your code where you can see the debugger progress. Other layouts are available:
-<pre><code>next - Display the next layout
+	<div class="content">
+		<h1>GDB </h1><p>GDB is a C debugger for the cli, it allows stepping through a program, setting breakpoints, watching variables and many other more complex things too.</p><h2>Compiling for GDB </h2><pre>gcc -g program.c -o program </pre><br><p>Use the -g flag to keep the debug symbols in your output binary.</p><h2>Running GDB </h2><pre>gdb ./program  </pre><h1>Using! </h1><p>Once you launch gdb you will be presented with a basic prompt. Your program wont run untill you type <em>run </em> at the prompt.</p><h2>Getting a sensible view of your code </h2><p> </p><p>At the prompt type d layout src }} to get a view of your code where you can see the debugger progress. Other layouts are available:<br></p><pre>
+next - Display the next layout
 prev - Display the previous layout
 src - Display the source and command windows
 asm - display the assembly and command windows
 split - display the src, asm and ccommand windows
 regs - display the register window along with src, asm or split.
-</code></pre>
-
-<h2>Setting a breakpoint </h2>
-
-<a href="http://www.gdbtutorial.com/gdb-breakpoints-example">Tutorial </a><br><br>
-Many ways, here are a few:
-
-<pre><code>break file.c:17 <- set a breakpoint on line 17 in file.c
+</pre><h2>Setting a breakpoint </h2><p><a href="http://www.gdbtutorial.com/gdb-breakpoints-example">Tutorial </a><br><br><br>Many ways, here are a few:</p><pre>
+break file.c:17 <- set a breakpoint on line 17 in file.c
 break func_name <- set a breakpoint at a function start
 break (+/-)3 <- set a breakpoint offset from current location
-</code></pre> 
+</pre><p> </p><p>To continure execution after a breakpoint type </p><pre>continue </pre><p> at the prompt.</p><h2>Stepping </h2><p>Type an </p><pre>n </pre><p> at the prompt to step to the next line. Type an </p><pre>s </pre><p> to step into a function.</p><p>iewing variables }}</p><pre>print variable_name </pre>
+	</div>
 
-To continure execution after a breakpoint type <pre><code>continue </code></pre> at the prompt.
-
-<h2>Stepping </h2>
-
-Type an <pre><code>n </code></pre> at the prompt to step to the next line. Type an <pre><code>s </code></pre> to step into a function.
-
-{{ Viewing variables }}
-
-<pre><code>print variable_name </code></pre>
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

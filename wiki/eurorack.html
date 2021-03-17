@@ -3,125 +3,43 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/wiki/eurorack.jpg"></img>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h1>Eurorack synths </h1>
-
-Eurorack is a small form factor of analogue modular synth, although more and more digital modules are becoming available.
-
-<h2>Physical spec </h2>
-
-<i>3U height  ( 113.4mm ) </i> <br>
-<i>1HP width ( 5.08mm ) </i> <br>
-<i>Mono 3.5mm jack </i> <br>
-<br>
-All module in the system are 3U high. The width of a module is measured in a number of HP wide such as 3HP ( 15.24mm ).  
-Connections between modules inputs and outputs are made with mono 3.5mm jack cables. 
-
-<h2>Electrical spec </h2>
-
-<h3>Power </h3>
-
-<i>+/- 12v DC </i> <br>
-<i>+ 5v DC  ( optional ) </i> <br>
-<br>
-Power is from a dual rail 12v DC power supply on a 10 or 16 pin box header. An optional 5v DC supply may also be available but is
-not standard, although most power supplies include it, so check to see if you need an adaptor to provide it.
-
-<h3>Signals </h3>
-<i>Audio 10v peak to peak ( +/- 5v ) </i> <br>
-<i>Control voltages 5v peak to peak or 0v -8v </i> <br>
-<i>Triggers 0v - 5v </i> <br>
-<i>volt per octave </i><br>
-<br>
-Control voltages can be unipolar or bipolar. Unipolar signals normally go +/- 2.5v and unipolar ones normally go 0v - 8v.
-
-<h2>Basic module types </h2>
-
-<h3>Oscillators </h3>
-Oscillators are sound sources for your synth. Normally pitch is controlled by a V/Octave input.
-
-<h3>Voltage controlled amplifier </h3>
-Otherwise known as a VCA these modules control the amplitude of an input signal being reproduced at the output. An input voltage is used to 
-set the level of the output signal.
-
-<h3>Envelope </h3>
-These modules produce a varying voltage over a period of time. Voltage rises and falls in four common stages, attack, decay, sustain and release. These 
-modules are usually triggered by a gate voltage or trigger at an input.
-<pre><code>V|      /\ 
+	<div class="content">
+		<img src="./media/wiki/eurorack.jpg "><h1>Eurorack synths </h1><p>Eurorack is a small form factor of analogue modular synth, although more and more digital modules are becoming available.</p><h2>Physical spec </h2><p><em>3U height  ( 113.4mm ) </em> <br><br><em>1HP width ( 5.08mm ) </em> <br><br><em>Mono 3.5mm jack </em> <br><br><br><br>All module in the system are 3U high. The width of a module is measured in a number of HP wide such as 3HP ( 15.24mm ).  <br>Connections between modules inputs and outputs are made with mono 3.5mm jack cables. </p><h2>Electrical spec </h2><h3>Power </h3><p><em>+/- 12v DC </em> <br><br><em>+ 5v DC  ( optional ) </em> <br><br><br><br>Power is from a dual rail 12v DC power supply on a 10 or 16 pin box header. An optional 5v DC supply may also be available but is<br>not standard, although most power supplies include it, so check to see if you need an adaptor to provide it.</p><h3>Signals </h3><p><em>Audio 10v peak to peak ( +/- 5v ) </em> <br><br><em>Control voltages 5v peak to peak or 0v -8v </em> <br><br><em>Triggers 0v - 5v </em> <br><br><em>volt per octave </em><br><br><br><br>Control voltages can be unipolar or bipolar. Unipolar signals normally go +/- 2.5v and unipolar ones normally go 0v - 8v.</p><h2>Basic module types </h2><h3>Oscillators </h3><p>Oscillators are sound sources for your synth. Normally pitch is controlled by a V/Octave input.</p><h3>Voltage controlled amplifier </h3><p>Otherwise known as a VCA these modules control the amplitude of an input signal being reproduced at the output. An input voltage is used to <br>set the level of the output signal.</p><h3>Envelope </h3><p>These modules produce a varying voltage over a period of time. Voltage rises and falls in four common stages, attack, decay, sustain and release. These <br>modules are usually triggered by a gate voltage or trigger at an input.<br></p><pre>
+V|      /\ 
 O|     /  \______
 L|    /          \
 T|--------------------
  |     A  D  S   R
  | <---- TIME ----->
-</code></pre>
+</pre><p>The attack time is the length of time that the voltage takes to rise to the maximum level. The decay time is the time it takes <br>for the voltage to lower to the sustain level after the attack period has finished. The sustain level is held for as long as a gate <br>signal is still present at the input. The release time is the amount of time it takes for the voltage to lower to the minimum after <br>the gate signal ends at the input.</p><h3>Voltage controlled filter </h3><p>These modules are used to remove/ shape frequencies from an audio source. They commonly have 2 controls, cutoff an resonance,<br>that are voltage controllable.</p><p>                                </p>
+	</div>
 
-The attack time is the length of time that the voltage takes to rise to the maximum level. The decay time is the time it takes 
-for the voltage to lower to the sustain level after the attack period has finished. The sustain level is held for as long as a gate 
-signal is still present at the input. The release time is the amount of time it takes for the voltage to lower to the minimum after 
-the gate signal ends at the input.
-
-<h3>Voltage controlled filter </h3>
-These modules are used to remove/ shape frequencies from an audio source. They commonly have 2 controls, cutoff an resonance,
-that are voltage controllable.
-
-
-                                
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

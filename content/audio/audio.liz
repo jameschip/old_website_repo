@@ -1,7 +1,0 @@
-
-{{ im ./media/audio/audio.jpg }}
-{{ h1 Audio.}}
-
-{{ li ./media/audio/midines.tar.gz { NES samples } (14,6MB) }} {{ br }}
-A whole collection of samples recorded directly from MIDINES ages ago before I sold it.{{ br }}
-{{ br }}

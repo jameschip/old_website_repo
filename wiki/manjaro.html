@@ -3,105 +3,50 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<h1>Manjaro linux </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h2>Post install </h2>
-
-After a fresh manjaro install try not to forget to do the following.
-
-<h3>Install drivers </h3>
-Go to the manjaro setting manager and select the hardware config and click auto install drivers. I have an nvidia card that unfortunatly only functions properly with the proprietart driver 
-so use that.
-
-<h3>Disable grub timeout </h3>
-The grub timeout just slows boot down if it is the only system installed. Edit file <b>/etc/default/grub </b> loot for the line starting GRUB_TIMEOUT and change it to 
-<br>
-<pre><code>GRUB_TIMEOUT=0
-</code></pre><br>
-
-<h2>Cleaning package cache  </h2>
-
-Pacman keeps a package cache that can grow to quite a big size. Clear thee cache
-so that it has only the last 3 packages in it with the following command. <br>
-<pre><code>sudo paccache -r
-</code></pre> <br>
-Or choose to keep a number of packages. This will keep only one cached package. <br>
-<pre><code>sudo paccache -rk 1
-</code></pre>
-<br>
-
-<h2>Fixing corrupted or invalud update </h2>
-
-At some point the cache has gotten out of sync or something. Update your package signing keys with: <br>
-
-<pre><code>sudo pacman -Sy archlinux-keyring manjaro-keyring
+	<div class="content">
+		<h1>Manjaro linux </h1><h2>Post install </h2><p>After a fresh manjaro install try not to forget to do the following.</p><h3>Install drivers </h3><p>Go to the manjaro setting manager and select the hardware config and click auto install drivers. I have an nvidia card that unfortunatly only functions properly with the proprietart driver <br>so use that.</p><h3>Disable grub timeout </h3><p>The grub timeout just slows boot down if it is the only system installed. Edit file <b>/etc/default/grub </b> loot for the line starting GRUB_TIMEOUT and change it to <br><br><br></p><pre>
+GRUB_TIMEOUT=0
+</pre><br><h2>Cleaning package cache  </h2><p>Pacman keeps a package cache that can grow to quite a big size. Clear thee cache<br>so that it has only the last 3 packages in it with the following command. <br><br></p><pre>
+sudo paccache -r
+</pre><p> <br><br>Or choose to keep a number of packages. This will keep only one cached package. <br><br></p><pre>
+sudo paccache -rk 1
+</pre><br><h2>Fixing corrupted or invalud update </h2><p>At some point the cache has gotten out of sync or something. Update your package signing keys with: <br></p><pre>
+sudo pacman -Sy archlinux-keyring manjaro-keyring
 sudo pacman-key --populate archlinux manjaro
 sudo pacman-key --refresh-keys
 sudo pacman -Syu
-</code></pre>
-
-and then clear your whole cache with and try an update again.<br>
-
-<pre><code>pacman -Scc
+</pre><p>and then clear your whole cache with and try an update again.<br></p><pre>
+pacman -Scc
 pacman -Syu
-</code></pre>
+</pre>
+	</div>
 
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

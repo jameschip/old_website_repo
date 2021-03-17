@@ -3,159 +3,71 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<h1>The fish shell </h1>
-The fish shell is an interactive shell for linux with syntax highlighting and auto completion.
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<h2>Changing to  fish. </h2>
-
-You could just put this in the bottom of your .bashrc and that way your default bash
-setup runs and then throws you into fish.<br>
-
-<pre><code>exec fish </code></pre>
-
-Or to make fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells <br>
-
-<pre><code>echo /usr/local/bin/fish | sudo tee -a /etc/shells </code></pre>
-
-Change your default shell to fish <br>
-<pre><code>chsh -s /usr/local/bin/fish </code></pre>
-
-<h2>Defining functions </h2>
-
-Create a file in <b>~/.config/fish/functions </b> named <b>function_name.fish </b>. In this file create a function of the same name as the file. You will then be able to call this function from the prompt by typing its name.
-
-<h2>Change default prompt </h2>
-
-Create the file .config/fish/functions/fish_prompt.fish and create the fish_prompt function in it.
-The mionimalone I like is: <br>
-<pre><code>function fish_prompt
+	<div class="content">
+		<h1>The fish shell </h1><p>The fish shell is an interactive shell for linux with syntax highlighting and auto completion.</p><h2>Changing to  fish. </h2><p>You could just put this in the bottom of your .bashrc and that way your default bash<br>setup runs and then throws you into fish.<br></p><pre>exec fish </pre><p>Or to make fish your default shell add the fish shell /usr/local/bin/fish to /etc/shells <br></p><pre>echo /usr/local/bin/fish | sudo tee -a /etc/shells </pre><p>Change your default shell to fish <br><br></p><pre>chsh -s /usr/local/bin/fish </pre><h2>Defining functions </h2><p>Create a file in <b>~/.config/fish/functions </b> named <b>function_name.fish </b>. In this file create a function of the same name as the file. You will then be able to call this function from the prompt by typing its name.</p><h2>Change default prompt </h2><p>Create the file .config/fish/functions/fish_prompt.fish and create the fish_prompt function in it.<br>The mionimalone I like is: <br><br></p><pre>
+function fish_prompt
     set_color $fish_color_cwd
     echo -n (pwd)
     set_color normal
     echo -n -e '\n$ '
 end
-</code></pre>
-
-<h2>Change the default greeting </h2>
-
-create the file ./config/fish/functions/fish_greeting.fish and create the fish_greeting function in it.
-For a blank message just use an empty function. <br>
-<pre><code>function fish_greeting
+</pre><h2>Change the default greeting </h2><p>create the file ./config/fish/functions/fish_greeting.fish and create the fish_greeting function in it.<br>For a blank message just use an empty function. <br><br></p><pre>
+function fish_greeting
 end
-</code></pre>
-<br>
-
-<h1>Programming in fish! </h1>
-
-Its all about writing scrits isn't it? Writing fish scriptsis pretty easy, here are a few snippets I have gleaned while doing so.
-
-<h2>Arrays start at 1 </h2>
-
-Yes the first index of an array is 1. You can get the last index of an array with -1. Indexing at -2 will give you the item before the last one, and so on.<br>
-You can index ranges of an array like this:<br>
-
-<pre><code>array[1]		# first
+</pre><br><h1>Programming in fish! </h1><p>Its all about writing scrits isn't it? Writing fish scriptsis pretty easy, here are a few snippets I have gleaned while doing so.</p><h2>Arrays start at 1 </h2><p>Yes the first index of an array is 1. You can get the last index of an array with -1. Indexing at -2 will give you the item before the last one, and so on.<br><br>You can index ranges of an array like this:<br></p><pre>
+array[1]		# first
 array[-1]		# last
 array[5..-1]	# from the 5th element to the last
 array[-1..1]	# reverse
-</code></pre>
-
-<h2>Read file line by line </h2>
-<pre><code>while read -la line 
+</pre><h2>Read file line by line </h2><pre>
+while read -la line 
 	echo $line
 end < file_name.txt
 
-</code></pre>
-
-<h2>Switch checking string matches </h2>
-You can use the wild card in switches on a string!<br>
-<pre><code>switch $var
+</pre><h2>Switch checking string matches </h2><p>You can use the wild card in switches on a string!<br><br></p><pre>
+switch $var
 	case "abc*" 	# var begins with abc
 	case "*abc" 	# var ends with abc
 	case "*abc*"	# var has abc in the middle
 end
-</code></pre>
-
-<h2>Loop over a string </h2>
-<pre><code>set -l chars (string split '' $var )
+</pre><h2>Loop over a string </h2><pre>
+set -l chars (string split '' $var )
 for ch in $chars
 echo $ch
 end
-</code></pre>
-
-<h2>Grow a list of values. </h2>
-
-<pre><code># Set the list to itself + the new value
+</pre><h2>Grow a list of values. </h2><pre>
+# Set the list to itself + the new value
 # If list does no exist it is created!
 set -l list $list "$value_to_add"
-</code></pre>
+</pre><br><br><br><br><br><br><br><br>
+	</div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

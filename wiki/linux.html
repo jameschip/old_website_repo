@@ -3,92 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<h1>Linux notes </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-Linux is an open source os (yes i know its just the kernel and what i am taking about is gnu+linux, piss off) created by Linus Torvalds.
-It is a UNIX like system that shares many similarities with other UNIX like such as BSD.
+	<div class="content">
+		<h1>Linux notes </h1><p>Linux is an open source os (yes i know its just the kernel and what i am taking about is gnu+linux, piss off) created by Linus Torvalds.<br>It is a UNIX like system that shares many similarities with other UNIX like such as BSD.</p><h2>Directory structure </h2><p><b>/ </b> - the root directory. Everything starts here. <br><br><b>/bin </b> - Binaries. This is where all the binaries for all users live. <br><br><b>/sbin </b> - System binaries only for root or sudo users. <br><br><b>/lib </b> - Shared libs needed by binaries in /bin and /sbin <br><br><b>/dev </b> - Device files. Serial ports ans such. <br><br><b>/etc </b> - Configuration files for the system. <br><br><b>/usr </b> - Binaries and libs for the user system. <br><br><b>/home </b> - The users home data directory. All your personal stuff here. <br><br><b>/tmp </b> - Temporary files needed by processes. <br><br><b>/var </b> - Variable files such as logs and caches. <br><br><b>/boot </b> - Files important for booting the system. <br><br><b>/proc </b> - Information about running processes. <br><br><b>/opt </b> - 3rd party software goes here most of the time. </p><h1>Linux setup notes.</h1><p>These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. <br><br><br><br><a href="./wiki/manjaro.html">{ Manjaro notes } </a> <br></p><h2>Software. </h2><p><a href="./wiki/fish_shell.html">{ Notes on fish shell } </a><br><br><a href="./wiki/nnn.html">{ Notes on nnn } </a><br><br></p>
+	</div>
 
-<h2>Directory structure </h2>
-
-<b>/ </b> - the root directory. Everything starts here. <br>
-<b>/bin </b> - Binaries. This is where all the binaries for all users live. <br>
-<b>/sbin </b> - System binaries only for root or sudo users. <br>
-<b>/lib </b> - Shared libs needed by binaries in /bin and /sbin <br>
-<b>/dev </b> - Device files. Serial ports ans such. <br>
-<b>/etc </b> - Configuration files for the system. <br>
-<b>/usr </b> - Binaries and libs for the user system. <br>
-<b>/home </b> - The users home data directory. All your personal stuff here. <br>
-<b>/tmp </b> - Temporary files needed by processes. <br>
-<b>/var </b> - Variable files such as logs and caches. <br>
-<b>/boot </b> - Files important for booting the system. <br>
-<b>/proc </b> - Information about running processes. <br>
-<b>/opt </b> - 3rd party software goes here most of the time. 
-
-<h1>Linux setup notes.</h1>
-
-These are my notes on how i setup my linux desktop. I tend towards Manjaro at the moment. <br>
-<br>
-<a href="./wiki/manjaro.html">{ Manjaro notes } </a> <br>
-
-<h2>Software. </h2>
-<a href="./wiki/fish_shell.html">{ Notes on fish shell } </a><br>
-<a href="./wiki/nnn.html">{ Notes on nnn } </a><br>
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

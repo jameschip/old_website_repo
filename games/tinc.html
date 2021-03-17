@@ -3,131 +3,54 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/games/tinc.png"></img>
-<h1>Theoretically Infinite Noughts and Crosses </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-In the standard version on Noughts and Crosses if each player makes optimal moves every game will end in a draw. TINC differes from this in the way that if both players make optimal moves theoretically the game could carry on to be infinitely big and continue being played unntil the end of time.
+	<div class="content">
+		<img src="./media/games/tinc.png "><h1>Theoretically Infinite Noughts and Crosses </h1><p>In the standard version on Noughts and Crosses if each player makes optimal moves every game will end in a draw. TINC differs from this in the way that if both players make optimal moves theoretically the game could carry on to be infinitely big and continue being played until the end of time.</p><h2>How to play </h2><p>A turn in a game of TINC has three phases.</p><ul><li>Place up to two symbols on the grid.</li><li>Check for a win.</li><li>Expand the grid if needed. </li></ul><p>To win a player must create an unbroken line, orthogonal or diagonal, of more than one of their symbol from one side of the grid to the other. Players go back and forth taking turns trying to win.</p><h2>Setup </h2><ul><li>Choose who will be noughts and who will be crosses.</li><li>Draw a single square cell in the centre of the paper, this is the grid. </li></ul><h2>Place up to two symbols </h2><ul><li>During their turn a player places up to two of their symbol in an empty cell on the grid.</li><li>A symbol may only be placed in an empty cell.</li><li>The player must place at least one symbol on their turn.</li><li>If there is only one cell available then the player must place their symbol in that cell and may not place any more symbols this turn.</li><li>You may not place a symbol of the other players type. </li></ul><h2>Check for a win </h2><p>After you have placed your symbols on the grid you then check to see if either player has won. If a player has won then the game ends here, do not proceed to the next phase.</p><h2>Expand the grid </h2><p>If at the end of a turn no player has won and there is a symbol of either type touching the edge of the grid then the grid expands. Grow the grid by one cell in each direction.</p><h2>Play Example </h2><p>In this example an X is a cross that has been placed in a cell a O is a nought that has been places in a cell and a ~ is an empty cell.</p><h3>Turn one. </h3><p>On this turn there is only one space available, the player must place their symbol here. <br></p><pre>
 
-<h2>How to play </h2>
+	~	->		X
 
-A turn in a game of TINC has three phases.
+</pre><p>We can see at this point the player has not won so we check to grow the grid. As there is a symbol against the edge of the grid then we expand it one cell in each direction.<br></p><pre>
+				~~~
+	X	->		~X~
+				~~~
+</pre><h3>Turn two </h3><p>On their turn the next player may place up to two of their symbols on the grid.<br></p><pre>
+	~~~				~~~
+	~X~		->		~XO
+	~~~				~~O
+</pre><p>Again we check to see if either player has won. As they have not we grow the grid again!<br></p><pre>
+					~~~~~
+	~~~				~~~~~
+	~XO		->		~~XO~		
+	~~O		 		~~~O~
+					~~~~~
+</pre><p>An the game continues as such.<br></p>
+	</div>
 
-<ul><li>Place up to two symbols on the grid.</li>
-<li>Check for a win.</li>
-<li>Expand the grid if needed. </li></ul>
-
-To win a player must create an unbroken line, orthagonal or diagonal, of more than one of their symbol from one side of the grid to the other. Playes go back and forth taking turns trying to win.
-
-<h2>Setup </h2>
-
-<ul><li>Choose who will be noughts and who will be crosses.</li>
-<li>Draw a single square cell in the centre of the paper, this is the grid. </li></ul>
-
-<h2>Place up to two symbols </h2>
-
-<ul><li>During their turn a player places up to two of their symbol in an empty cell on the grid.</li>
-<li>A symbol may only be placed in an empty cell.</li>
-<li>The player must place at least one symbol on their turn.</li>
-<li>If there is only one cell available then the player must place their symbol in that cell and may not place any more symbols this turn.</li>
-<li>You may not place a symbol of the other players type. </li></ul>
-
-<h2>Check for a win </h2>
-
-After you have placed your symbols on the grid you then check to see if either player has won. If a player has won then the game ends here, do not proceed to the next phase.
-
-## Expand the grid
-
-If at the end of a turn no player has won and there is a symbol of either type touching the edge of the grid then the grid expands. Grow the grid by one cell in each direction.
-
-<h2>Play Example </h2>
-
-In this example an X is a cross that has been placed in a cell a O is a nought that has been places in a cell and a ~ is an empty cell.
-
-<h3>Turn one. </h3>
-
-On this turrn there is only one space available, the player must place their symbol here. 
-<pre><code>>
->	~	->		X
->
-</code></pre>
-We can see at this point the player has not won so we check to grow the grid. As there is a symbol against the edge of the grid then we expand it one cell in each direction.
-<pre><code>>				~~~
->	X	->		~X~
->				~~~
-</code></pre>
-
-<h3>Turn two </h3>
-
-On their turn the next player may place up to two of their symbols on the grid.
-<pre><code>>	~~~				~~~
->	~X~		->		~XO
->	~~~				~~O
-</code></pre>
-Again we check to see if either player has won. As they have not we grow the grid again!
-<pre><code>>					~~~~~
->	~~~				~~~~~
->	~XO		->		~~XO~		
->	~~O		 		~~~O~
->					~~~~~
-</code></pre>
-
-An the game continues as such.
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

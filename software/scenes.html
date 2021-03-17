@@ -3,86 +3,30 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/scenes.png"></img>
-<h1>Scenes </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<a href="https://git.sr.ht/~jameschip/scenes">{ Scenes on Sourcehut } </a><br>
-<br>
-Scenes is a small graphics and text layout tool for the linux terminal. The only export option is the plain text save file that contains all of the data nessesary for the application to load the image again. If you wish to export as an image file then you should take a screen shot.
-
-<h2>Use </h2>
-
-Start scenes by invoking the command with a file name. <br>
-<pre><code>scenes file_name
-</code></pre>
-If the file exists then the image will be opened ready for editing, if the file doesnot exist then it will be created when you save. Scenes has two modes which can be chaged between by pressing the tab key, these are <b>text </b> and <b>draw </b>. <br>
-<br>
-The following commands are available in both modes:<br>
-<br>
-<b>ctrl+s </b> ~ Save file. <br>
-<b>ctrl+q </b> ~ Quit.
-
-<h2>Draw mode </h2>
-
-Draw mode is used for creating pictures. You move the cursor using the arrow keys and use the numbers 1 - 8 to iinsert a colour at that location. There is also a bucket fill tool.
-<br><br> 
-<b>1 - 9 </b>  ~ Add colour at location of cursor <br>
-<b>qwerty </b> ~ Bucket fill at location of cursor<br>
-
-<h2>Text mode </h2>
-
-Text mode is for overlaying text onto an image. Simply move your cursor, using the arrow keys, to where you want it and type the text in. There is no formal support for new lines and tabs; text is just places on the screen where  you  want it.
-
-<h2>Save format </h2>
-The save format is a plane text file, it has the following format.
-<pre><code>4,4		<- The xy sizze of the image saves, your terminal sshoould be this size when you open it
+	<div class="content">
+		<img src="./media/software/scenes.png "><p><a href="https://git.sr.ht/~jameschip/scenes">{ Scenes on Sourcehut } </a></p><h1>Scenes </h1><p>Scenes is a small graphics and text layout tool for the Linux terminal. The only export option is the plain text save file that contains all of the data necessary for the application to load the image again. If you wish to export as an image file then you should take a screen shot.</p><h2>Use </h2><p>Start scenes by invoking the command with a file name.</p><pre>scenes file_name </pre><p>If the file exists then the image will be opened ready for editing, if the file doesn't exist then it will be created when you save. Scenes has two modes which can be changed between by pressing the tab key, these are <b>text </b> and <b>draw </b>. The following commands are available in both modes:</p><p><b>ctrl+s </b> ~ Save file.<br><b>ctrl+q </b> ~ Quit.</p><h2>Draw mode </h2><p>Draw mode is used for creating pictures. You move the cursor using the arrow keys and use the numbers 1 - 8 to insert a colour at that location. There is also a bucket fill tool.</p><p><b>1 - 9 </b>  ~ Add colour at location of cursor<br><b>qwerty </b> ~ Bucket fill at location of cursor</p><h2>Text mode </h2><p>Text mode is for overlaying text onto an image. Simply move your cursor, using the arrow keys, to where you want it and type the text in. There is no formal support for new lines and tabs; text is just places on the screen where  you  want it.</p><h2>Save format </h2><p>The save format is a plane text file, it has the following format.</p><pre>
+4,4		<- The xy size of the image saves, your terminal should be this size when you open it
 1234	<- The colours of the background that were placed ( 1- 8 )
 5678
 1234
@@ -91,17 +35,14 @@ text	<- The text on a grid, blank space filled with [SPACE] characters.
 text
 text
 text
-</code></pre>
+</pre>
+	</div>
 
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

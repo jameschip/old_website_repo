@@ -3,144 +3,43 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/zk_logo.png"></img>
-<h1>ZK </h1>
-<a href="https://git.sr.ht/~jameschip/zettelkasten">( Zk on sourcehut ) </a> <br> <br>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-This is an implementation of a zettelkasten (German, slip box) journaling method for Linux. The basic idea of a Zettelkasten is that short ideas, or notes, are made on numbered sips of paper kept in boxes. These notes have the following properties in this implementation:
-
-    <ul><li>A note has a title.</li>
-    <li>A note has a short idea or bit of information on it.</li>
-    <li>A note can have a number of tags associated with it that group them into contexts. </li>
-    <li>A note can also have other notes linked to it by referencing other notes numbers. </li>
-    <li>A link to another note has a context associated with it, this is the reason why these two notes are linked. </li></ul>
-
-One of the most important parts here is the context given to the links between notes. This context is more useful than just providing a title, it does more than tell you which note is linked; it tells you WHY! This extra context seems insignificant on paper but makes a huge difference in practice.
-<br><br>
-Assume for instance we have 2 entries in our Zettelkasten with the titles "Ferns" and "Spores". If "Ferns" has a link to "Spores" and just the title of the entries is used then we have little idea of how spores are related to ferns. If however instead we have a link to the "Spores" note with the context "Ferns reproduce using spores" we now know why the notes are related.
-
-<h2>Purposeful limits.</h2>
-
-There are limits imposed by design.
-
-    <ul><li>A notes content may only be 500 characters. Notes should be short and punchy, you are not writing an essay per entry. Break longer things into multiple notes. </li>
-    <li>You may never edit a notes content, If you need to provide corrections then create a new note and link them. This will not only teach you about the topic; but also the way you learn. </li>
-    <li>You may never remove a note from the Zettelkasten. There is no point to removing the past. </li></ul>
-
-<h2>How? </h2>
-
-Pull this repository and run the make file. The built binary will be /build/zk. Move this to somewhere in your path and use from the command line. More complete instructions on how to use the software will be available somewhere.
-
-<h2>Where? </h2>
-
-The entries in created by zk will be in a folder in ~/Zettelkasten. All of the entries will be in an extension less numbed text file counting from 0 upwards by one every time you create a new entry.
-
-<h2>What format? </h2>
-
-It was important from the offset that the entries this Zettelkasten are in plain text and readable from outside the application itself. This also means that, providing it uses the same format, other software would be able to interact with your entries in a meaningful way.
-Entries have a header section that is used to define things like tags, links to other entries and the title. Anything outside of this header material is considered the content of entry itself.
-Header sections begin and end with the string ---\n and each item is on its own line. The first character of the line indicates what data that line holds.
-
-    <ul><li>> The title </li>
-    <li># - A tag </li>
-    <li>~ - A link to another entry.</li></ul>
-
-An example file is:
-
-<pre><code>> The title of the note
+	<div class="content">
+		<img src="./media/software/zk_logo.png "><p><a href="https://git.sr.ht/~jameschip/zettelkasten">( Zk on sourcehut ) </a></p><h1>ZK </h1><p>This is an implementation of a zettelkasten (German, slip box) journaling method for Linux. The basic idea of a Zettelkasten is that short ideas, or notes, are made on numbered sips of paper kept in boxes. These notes have the following properties in this implementation:</p><ul><li>A note has a title.</li><li>A note has a short idea or bit of information on it.</li><li>A note can have a number of tags associated with it that group them into contexts. </li><li>A note can also have other notes linked to it by referencing other notes numbers. </li><li>A link to another note has a context associated with it, this is the reason why these two notes are linked. </li></ul><p>One of the most important parts here is the context given to the links between notes. This context is more useful than just providing a title, it does more than tell you which note is linked; it tells you WHY! This extra context seems insignificant on paper but makes a huge difference in practice.</p><p>Assume for instance we have 2 entries in our Zettelkasten with the titles "Ferns" and "Spores". If "Ferns" has a link to "Spores" and just the title of the entries is used then we have little idea of how spores are related to ferns. If however instead we have a link to the "Spores" note with the context "Ferns reproduce using spores" we now know why the notes are related.</p><h2>Purposeful limits.</h2><p>There are limits imposed by design.</p><ul><li>A notes content may only be 500 characters. Notes should be short and punchy, you are not writing an essay per entry. Break longer things into multiple notes. </li><li>You may never edit a notes content, If you need to provide corrections then create a new note and link them. This will not only teach you about the topic; but also the way you learn. </li><li>You may never remove a note from the Zettelkasten. There is no point to removing the past. </li></ul><h2>How? </h2><p>Pull this repository and run the make file. The built binary will be /build/zk. Move this to somewhere in your path and use from the command line. More complete instructions on how to use the software will be available somewhere.</p><h2>Where? </h2><p>The entries in created by zk will be in a folder in ~/Zettelkasten. All of the entries will be in an extension less numbed text file counting from 0 upwards by one every time you create a new entry.</p><h2>What format? </h2><p>It was important from the offset that the entries this Zettelkasten are in plain text and readable from outside the application itself. This also means that, providing it uses the same format, other software would be able to interact with your entries in a meaningful way.</p><p>Entries have a header section that is used to define things like tags, links to other entries and the title. Anything outside of this header material is considered the content of entry itself. Header sections begin and end with the string ---\n and each item is on its own line. The first character of the line indicates what data that line holds.</p><ul><li>> The title </li><li># - A tag </li><li>~ - A link to another entry.</li></ul><p>An example file is:</p><pre>
+> The title of the note
 # tag_has_no_spaces
 # another_tag
 ~ {10} : This links to entry 10 with this context text.
 ~ {13} : and this links to 13 with this context text.
 ---
-</code></pre>
-This is the content of the entry!
+</pre><p>This is the content of the entry!</p><h2>Why? </h2><p>I built this for me. This is the note taking software I wanted. I share it here in case others may find it useful and so other may learn form (my mistakes in) the code.</p><h2>Navigating </h2><p>This is very much a personal project so documentation is a bit thin on the ground. If you want to know how to use ZK fully the best way to learn is to read the code. Never the less here is my attempt to document how to use zk as best as i can.</p><h3>Entry selection </h3><p>Screen that just lists all the entries.</p><ul><li>{a} - Goto add entry screen. </li><li>{f} - Filter entries by tag.</li><li>{c} - Clear filter. </li><li>{return} - Read an entry. </li><li>{q} - quit. </li></ul><h3>Add entry Screen </h3><p>Input the details for your entry.</p><ul><li>{tab} - Change focus. </li><li>{return} - Confirm when on OK or Cancel. </li></ul><h3>Read entry screen </h3><p>A screen that displays an entry.</p><ul><li>{L} - Add a link to the entry.</li><li>{T} - Lists all entry tags. ( {a} add a tag while tags are listed.) </li><li>{q} - close entry.</li><li>{return} - goto selected link.</li></ul>
+	</div>
 
-<h2>Why? </h2>
-
-I built this for me. This is the note taking software I wanted. I share it here in case others may find it useful and so other may learn form (my mistakes in) the code.
-
-<h2>Navigating </h2>
-This is very much a personal project so documentation is a bit thin on the ground. If you want to know how to use ZK fully the best way to learn is to read the code. Never the less here is my attempt to document how to use zk as best as i can.
-
-<h3>Entry selection </h3>
-Screen that just lists all the entries.
-
-    <ul><li>{a} - Goto add entry screen. </li>
-    <li>{f} - Filter entries by tag.</li>
-    <li>{c} - Clear filter. </li>
-    <li>{return} - Read an entry. </li>
-    <li>{q} - quit. </li></ul>
-
-<h3>Add entry Screen </h3>
-Input the details for your entry.
-
-    <ul><li>{tab} - Change focus. </li>
-    <li>{return} - Confirm when on Ok or Cancel. </li></ul>
-
-<h3>Read entry screen </h3>
-A screen that displays an entry.
-
-    <ul><li>{L} - Add a link to the entry.</li>
-    <li>{T} - Lists all entry tags. ( {a} add a tag while tags are listed.) </li>
-    <li>{q} - close entry.</li>
-    <li>{return} - goto selected link.</li></ul>
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-

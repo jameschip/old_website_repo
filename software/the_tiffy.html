@@ -3,106 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <base href="https://www.jameschip.io/"> 
-    <!-- <base href="file:///home/james/Documents/projects/jameschip.github.io/"> -->
+    <!-- <base href="file:///home/james/Documents/projects/WebOut/"> -->
     <meta name="description" content="James Chip website." />
     <meta name="keywords" content="james chip, chiptune, solo rpg" />
     <meta name="author" content="James Henderson" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-	<link rel="stylesheet" type="text/css" href="./tiffy_layout.css">
+	<link rel="stylesheet" type="text/css" href="./layout.css">
 </head>
 
 <body>
 
-    <div class="topBar"> 
-        <div class="titleContainer">
-            <div class="titleImage"></div>
-            <div>
-                <span class="titleText">James Chip</span>
-                <div class="socilaLinks">
-                        <a href='https://webring.xxiivv.com/#random' target='_blank'>
-                            <img src='https://webring.xxiivv.com/icon.white.svg' class="socialImage"/>
-                        </a>
-                        <a href='https://git.sr.ht/~jameschip' target='_blank'>
-                        	<img src='./media/social/srht.png' class="socialImage"/>
-                        </a>
-                        <a href='https://merveilles.town/@jameschip' target='_blank'>
-                            <img src='./media/social/mastodon_logo.png' class="socialImage" />
-                        </a>
-                        <a href='http://www.jameschip.io/index.xml' target='_blank'>
-                            <img src='./media/social/rss.png' class="socialImage" />
-                        </a>
-                </div>
-            </div>
-        </div>    
-    </div>
-    <div class="pageContainer">
-        
-            <div class="content">
-                <div class="nav">
-                    <a href="./index.html">Now</a><div class="divider">|</div>
-                    <a href="./software/software.html">Software</a><div class="divider">|</div>
-                    <a href="./games/games.html">Games</a><div class="divider">|</div>
-                    <!-- <a href="./audio/audio.html">Audio</a><div class="divider">|</div> -->
-                    <a href="./book_list.html">Reading</a><div class="divider">|</div>
-                    <a href="./audio/audio.html">Audio</a><div class="divider">|</div>
-                    <a href="./wiki/wiki.html">Wiki</a><div class="divider">|</div>
-                    <a href="https://shop.jameschip.io">Shop</a><div class="divider">|</div>
-                </div>
-                
-<img src="./media/software/tiffy.png"></img>
-<h1>The Tiffy </h1>
+	<div class="menu">
+		<ul>
+			<li><img src="./media/logo-50x50.png"/></li> 
+			<li><a href="./index.html">{ Now } </a></li>
+			<li><a href="./projects.html">{ Projects } </a></li>
+			<li><a href="./wiki/wiki.html">{ Wiki }</a></li>
+			<li><a href="https://shop.jameschip.io">{ Shop }</a></li>
+		</ul>
+	</div>
 
-<a href="https://git.sr.ht/~jameschip/tiffy">{ The Tiffy on Sourcehut } </a> <br>
-<br> 
-Tiffy is a simple minimalist static website generator that creates the flow of information on the river. Tiffy uses a single html layout file and a single css file to create pages filled with content from the Lizard files you create.
+	<div class="content">
+		<img src="./media/software/tiffy.png "><p><a href="https://git.sr.ht/~jameschip/tiffy">{ The Tiffy on Sourcehut } </a> <br></p><h1>The Tiffy </h1><p>Tiffy is a simple minimalist static website generator that creates the flow of information on the river. Tiffy uses a single html layout file and a single css file to create pages filled with content from the Lizard files you create.</p><h2>Tiffy projects </h2><p>Tiffy projects are simple to set up. Put a .tiffyconf file in a directory are ready to go.<br><em>example .tiffyconf </em></p><pre>
+BUILD=web
+CONTENT=content
+</pre><h2>The content directory. </h2><p> </p><p>The content directory is where all of the liz files (and other files) for your website live. The only mandatory file in this directory is a <em>tiffy_layout.html </em> files which holds the layout for all of your websites pages.</p><h2>The tiffy_layout.html file. </h2><p> </p><p>The tiffy_layout.html file is the basic layout for every page of your website. It is a regular html file in every way except that it includes a single special  /{{content}}  tag. When you build your pages the /{{content}} tag will be replaced with the content generated from a .liz file. </p><h2>Building the project. </h2><p> </p><p>To build your website, navigate to the root of your project and run:</p><pre>tiffy </pre><p> </p><p>The project's build populated with html files.<br></p>
+	</div>
 
-<h2>Tiffy projects </h2>
-
-To create a new Tiffy project use the following command:
-<br>
-<pre><code>tiffy -n </code></pre>
-
-A Tiffy project can be created in any directory and has a simple file structure.
-
-    <ul><li>/content </li>
-    <li>/content/tiffy_layout.html </li>
-    <li>/content/tiffy_layout.css </li>
-    <li>/content/index.liz </li>
-    <li>/media </li></ul> 
-
-<h2>The content directory. </h2> 
-
-The content directory is where all of your .liz files live. It also holds the tiffy_layout.html and tiffy_layout.css files. When you build your website each .liz file in the content directory will be converted into a .html file in the project's root folder, for example; index.liz will be converted into index.html in the root directory.
-
-<h2>The tiffy_layout.html and tiffy_layout.css files. </h2> 
-
-The tiffy_layout.html file is the basic layout for every page of your website. It is a regular html file in every way except that it includes a single special {{content}} tag. When you build your pages the {{content}} tag will be replaced with the content generated from a .liz file. The tiffy_layout.css file is included in the header of tiffy_layout.html and will be copied into the projects root folder when you build your project.
-
-<h2>The index.liz file. </h2>
-
-This is a single content file. When you build your project, an html file with the same name will be created in the project's root folder.
-
-<h2>The media folder. </h2> 
-
-This is where you should put all of the images and other media that you need for your pages.
-
-<h2>Building the project. </h2> 
-
-To build your website, navigate to the root of your project and run:
-
-<pre><code>tiffy </code></pre> 
-
-The project's root directory will be populated with html files.
-
-
-                <div class="footer"> 
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/social/cc.svg" class="socialImage" ></img></a> 
-                    <span> © James Henderson 2020 BY-NC-SA 4.0</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	<div class="footer">
+		<a href='https://webring.xxiivv.com/#random' target='_blank'><img src='https://webring.xxiivv.com/icon.black.svg'/></a>
+		<a href="https://git.sr.ht/~jameschip"><img src="./media/srht.png" ></img></a> 
+		<a href="https://merveilles.town/@jameschip"><img src="./media/masto.png" ></img></a> 
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./media/cc.svg" ></img></a><br> 
+		<span> © James Henderson 2020 BY-NC-SA 4.0</span>
+	</div>
 </body>
-
